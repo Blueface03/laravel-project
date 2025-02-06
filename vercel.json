@@ -8,7 +8,9 @@
     
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/back/(.*)", "dest": "/public/back/" },
+        {"src": "/js/(.*)", "dest": "/public/back/js" },
+        {"src": "/css/(.*)", "dest": "/public/back/css" },
+        {"src": "/assets/(.*)", "dest": "/public/back/assets" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
