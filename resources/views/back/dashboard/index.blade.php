@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
+<body>
 <!--=============== HEADER ===============-->
 <header class="header">
     <nav class="nav container">
@@ -509,6 +510,7 @@
         </div>
     </div>
 </footer>
+</body>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
