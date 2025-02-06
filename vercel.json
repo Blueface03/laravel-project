@@ -4,11 +4,8 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
-    
-    
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/back/(.*)", "dest": "/public/back/" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
@@ -33,5 +30,6 @@
         "DB_PORT": "13151",
         "DB_DATABASE": "railway",
         "DB_USERNAME": "root"
+
     }
 }
