@@ -513,7 +513,6 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="https://laravel-project-self.vercel.app/back/js/scripts.js"></script> 
 <script src="https://laravel-project-self.vercel.app/back/js/navbar.js"></script>  
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
