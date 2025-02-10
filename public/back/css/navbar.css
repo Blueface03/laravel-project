@@ -57,7 +57,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  /* margin-inline: 1.5rem; */
 }
 
 /*=============== HEADER ===============*/
@@ -149,7 +149,7 @@ a {
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
-  justify-content: flex-start;;
+  justify-content: space-between;
   align-items: center;
   white-space: nowrap;  /* Menjaga teks tetap dalam satu baris */
   overflow: hidden;     /* Menghindari teks yang terpotong */
