@@ -9915,3 +9915,108 @@ iframe {
   height: 80vh;  /* Sesuaikan tinggi sesuai konten */
   border: none;
 }
+
+
+/* Header */
+.header2 {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header2 h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header2 h2 {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.divider2 {
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Container */
+.container2 {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* Document Section */
+.document-section2 h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Document Item */
+.document-item2 {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #007bff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.document-item2 h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.document-item2 p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Button Group */
+.button-group2 {
+  display: flex;
+  gap: 10px;
+}
+
+.btn2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn2:hover {
+  background-color: #0056b3;
+}
+
+.btn2 i {
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container2 {
+      width: 95%;
+  }
+
+  .button-group2 {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .btn2 {
+      width: 100%;
+      text-align: center;
+  }
+}

@@ -17,5 +17,5 @@
     <link rel="stylesheet" href="https://laravel-project-self.vercel.app/back/css/styles.css">
     <link rel="stylesheet" href="https://laravel-project-self.vercel.app/back/css/navbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
