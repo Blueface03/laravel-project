@@ -236,8 +236,5 @@
     </div>
 </div>
 @include('back.layout.footer')
-@yield('content')
-@yield('content')
-@yield('content')
 @include('back.layout.scripts')
 @yield('content')
