@@ -335,7 +335,7 @@ a {
 /* Kontainer utama yang menampung grup layanan utama tombol */
 .btn-container {
   display: flex;
-  justify-content: space-between;  /* Menyebar grup tombol */
+  justify-content: center;  /* Menyebar grup tombol */
   gap: 20px;  /* Memberikan jarak antar grup tombol */
   margin-top: 20px;
   flex-wrap: wrap;  /* Membuat grup tombol berpindah ke baris berikutnya jika ruang terbatas */
