@@ -57,7 +57,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  /* margin-inline: 1.5rem; */
+  margin-inline: 1.5rem;
 }
 
 /*=============== HEADER ===============*/
@@ -149,7 +149,7 @@ a {
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;;
   align-items: center;
   white-space: nowrap;  /* Menjaga teks tetap dalam satu baris */
   overflow: hidden;     /* Menghindari teks yang terpotong */
@@ -397,4 +397,13 @@ a {
   height: 100vh; /* Memastikan gambar mengisi layar penuh */
   object-fit: cover; /* Memastikan gambar tidak terdistorsi dan tetap memenuhi ruang */
   object-position: center; /* Menjaga gambar tetap terpusat */
+}
+.carousel_item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

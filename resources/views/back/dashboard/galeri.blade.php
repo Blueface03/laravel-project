@@ -1,4 +1,4 @@
-@include('back.layout.assets')
+@include('back.layout.stylesheet')
 @include('back.layout.navbar')
 
 <section class="page-section bg-light" id="portfolio">
@@ -350,6 +350,8 @@
         </div>
     </div>
 </div>
+@include('back.layout.scripts')
+@yield('content')
 @yield('content')
 @yield('content')
 @yield('content')

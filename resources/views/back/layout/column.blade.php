@@ -1,9 +1,8 @@
 <header>
-
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel_item active"
-                style="background-image: url('{{ asset('back/assets/img/bg1.jpg') }}');">
+                style="background-image: url('{{ asset('back/assets/img/bg1.jpg') }}'); background-size: cover; background-position: center; height: 65vh;">
                 <div class="carousel-caption">
                     <h1>
                         @switch($title)
@@ -21,7 +20,9 @@
                 </div>
             </div>
         </div>
+    </div>
 </header>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-sm-6 mb-4">
