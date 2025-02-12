@@ -3,8 +3,7 @@
     <nav class="nav container">
         <div class="nav__data">
             <a href="#" class="nav__logo">
-                <img src="{{ asset('back/assets/img/DUKCAPIL KOTA TEGAL.png') }}" alt="Logo"
-                    style="height: 40px;" />
+                <img src="{{ asset('back/assets/img/DUKCAPIL KOTA TEGAL.png') }}" alt="Logo" style="height: 40px;" />
             </a>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -57,12 +56,12 @@
                         @php
                             $programs = [
                                 'RENSTRA' => [
-                                    ['title' => 'Dokumen Rentra 2017-2022', 'url' => '#'],
-                                    ['title' => 'Dokumen Rentra 2022-2027', 'url' => '#'],
+                                    ['title' => 'Dokumen Rentra 2017-2022', 'url' => url('/renstra/2017-2022')],
+                                    ['title' => 'Dokumen Rentra 2022-2027', 'url' => url('/renstra/2022-2027')],
                                 ],
                                 'RENJA' => [
-                                    ['title' => 'Renja 2020-2023', 'url' => '#'], 
-                                    ['title' => 'Renja 2024-2026', 'url' => '#']
+                                    ['title' => 'Renja 2020-2023', 'url' => '#'],
+                                    ['title' => 'Renja 2024-2026', 'url' => '#'],
                                 ],
                                 'TAHUN ANGGARAN 2021' => [
                                     ['title' => '', 'url' => '#'],
@@ -128,8 +127,8 @@
                         @endphp
 
                         @foreach ($infoDisduk as $id => $title)
-                            <li><a class="dropdown__link"
-                                    href="{{ url('/infodisduk/' . $id) }}">{{ $title }}</a></li>
+                            <li><a class="dropdown__link" href="{{ url('/infodisduk/' . $id) }}">{{ $title }}</a>
+                            </li>
                         @endforeach
                     </ul>
                 </li>

@@ -41,8 +41,8 @@ class DashboardController extends Controller
     public function informasi($informasiNumber) {
         return view("back.dashboard.informasi.informasi" . $informasiNumber);
     }
-    public function program($programNumber) {
-        return view("back.dashboard.program.program" . $programNumber);
+    public function program($renstraNumber) {
+        return view("back.dashboard.renstra.renstra" . $renstraNumber);
     }
     
 }
