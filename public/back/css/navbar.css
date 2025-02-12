@@ -155,6 +155,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: background-color .3s;
+  gap: 5px;
 }
 
 .nav__link:hover {
