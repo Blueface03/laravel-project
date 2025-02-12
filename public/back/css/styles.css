@@ -9868,7 +9868,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .card {
   width: 100%;
-  max-width: 400px; /* Lebar maksimal kartu */
+  /* max-width: 400px; */ /* Lebar maksimal kartu */
   margin: 10px; /* Jarak antar kartu */
   padding: 20px; /* Memberikan jarak di dalam kartu */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -9877,12 +9877,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .card-img-top {
   width: 100%; /* Gambar mengisi lebar penuh kartu */
-  max-width: 350px; /* Maksimal lebar gambar */
-  height: 200px; /* Bentuk persegi panjang */
+  /* max-width: 350px; */ /* Maksimal lebar gambar */
+  /* height: 200px; */ /* Bentuk persegi panjang */
   display: block;
   object-fit: cover;
   border-radius: 20px; /* Membuat sudut gambar tidak lancip */
-  margin: 10px auto; /* Jarak 10px dari gambar ke kartu */
+  /* margin: 10px auto; */ /* Jarak 10px dari gambar ke kartu */
   background: #fff; /* Tambahkan background agar lebih estetik */
 }
 

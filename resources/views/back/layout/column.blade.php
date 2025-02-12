@@ -1,139 +1,140 @@
-<header>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel_item active"
-                style="background-image: url('{{ asset('back/assets/img/bg1.jpg') }}'); background-size: cover; background-position: center; height: 65vh;">
-                <div class="carousel-caption">
-                    <h1>
-                        @switch($title)
-                            @case('ARTIKEL')
-                                ARTIKEL
-                                @break
-                            @case('INFO KEGIATAN')
-                                INFO KEGIATAN
-                                @break
-                            @default
-                                BERITA
-                        @endswitch
-                    </h1>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
+
+
+<!-- Page header with logo and tagline-->
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1>
+                @switch($title)
+                    @case('ARTIKEL')
+                        ARTIKEL
+                        @break
+                    @case('INFO KEGIATAN')
+                        INFO KEGIATAN
+                        @break
+                    @default
+                        BERITA
+                @endswitch
+            </h1>
+            <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
         </div>
     </div>
 </header>
-
+<!-- Page content-->
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="{{ asset('back/assets/img/portfolio/2.jpg') }}"
-                        alt=""></a>
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
                 <div class="card-body">
-                    <h4 class="card-title">
-                        <a>Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                    <a class="btn btn-primary" href="#">View Project</a>
+                    <div class="small text-muted">January 1, 2023</div>
+                    <h2 class="card-title">Featured Post Title</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a class="btn btn-primary" href="#!">Read more →</a>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="{{ asset('back/assets/img/portfolio/2.jpg') }}"
-                        alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a>Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                    <a class="btn btn-primary" href="#">View Project</a>
+            <!-- Nested row for non-featured blog posts-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2023</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2023</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2023</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2023</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Pagination-->
+            <nav aria-label="Pagination">
+                <hr class="my-0" />
+                <ul class="pagination justify-content-center my-4">
+                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top"
-                        src="{{ asset('back/assets/img/portfolio/2.jpg') }}"alt=""></a>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
                 <div class="card-body">
-                    <h4 class="card-title">
-                        <a>Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                    <a class="btn btn-primary" href="#">View Project</a>
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400"
-                        alt=""></a>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
                 <div class="card-body">
-                    <h4 class="card-title">
-                        <a>Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                    <a class="btn btn-primary" href="#">View Project</a>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400"
-                        alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a>Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                    <a class="btn btn-primary" href="#">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400"
-                        alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a>Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                    <a class="btn btn-primary" href="#">View Project</a>
-                </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
             </div>
         </div>
     </div>
-    <!-- /.row -->
-
-    <!-- Pagination -->
-    <ul class="pagination justify-content-center">
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-            </a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-            </a>
-        </li>
-    </ul>
 </div>
