@@ -457,9 +457,10 @@ a {
 /* Styling ikon dalam tombol */
 .btn-custom i {
   margin-right: 5px; /* Menambahkan jarak antara ikon dan teks */
+  font-size: 18px; /* Ukuran ikon agar sesuai */
 }
 
 /* Menambahkan jarak lebih besar antara ikon dan teks */
-.btn-custom .icon-text {
-  margin-left: 5px; /* Memberikan jarak antara ikon dan teks */
+.btn-custom span {
+  margin-left: 8px; /* Memberikan jarak antara ikon dan teks */
 }
