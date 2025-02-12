@@ -409,17 +409,17 @@ a {
 }
 /* Class dasar untuk tombol */
 .btn-custom {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
   padding: 8px 15px;
   border-radius: 5px;
-  font-size: 14px;
+  gap: 5px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
   margin-right: 10px; /* Memberikan jarak antar tombol */
-  font-size: 13px; /* Sesuaikan ukuran font */
+  font-size: 14px; /* Sesuaikan ukuran font */
+  transition: background 0.3s;
 }
 
 /* Tombol Download dengan warna biru */
