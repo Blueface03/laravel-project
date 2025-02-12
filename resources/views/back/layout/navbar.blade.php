@@ -56,8 +56,8 @@
                         @php
                             $programs = [
                                 'RENSTRA' => [
-                                    ['title' => 'Dokumen Rentra 2017-2022', 'url' => url('/renstra/2017-2022')],
-                                    ['title' => 'Dokumen Rentra 2022-2027', 'url' => url('/renstra/2022-2027')],
+                                    ['title' => 'Dokumen Rentra 2017-2022', 'url' => url('/renstra/1')],
+                                    ['title' => 'Dokumen Rentra 2022-2027', 'url' => url('/renstra/2')],
                                 ],
                                 'RENJA' => [
                                     ['title' => 'Renja 2020-2023', 'url' => '#'],
