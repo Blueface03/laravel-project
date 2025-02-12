@@ -407,3 +407,54 @@ a {
   -o-background-size: cover;
   background-size: cover;
 }
+/* Class dasar untuk tombol */
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px; /* Sesuaikan ukuran font */
+}
+
+/* Tombol Download dengan warna biru */
+.btn-custom-download-1 {
+  background-color: #007bff; /* Warna Biru */
+}
+
+.btn-custom-download-1:hover {
+  background-color: #0056b3; /* Warna Biru Gelap */
+}
+
+/* Tombol Baca dengan warna hijau */
+.btn-custom-read-2 {
+  background-color: #28a745; /* Warna Hijau */
+}
+
+.btn-custom-read-2:hover {
+  background-color: #218838; /* Warna Hijau Gelap */
+}
+
+/* Tombol Link dengan warna kuning */
+.btn-custom-link-3 {
+  background-color: #ffc107; /* Warna Kuning */
+}
+
+.btn-custom-link-3:hover {
+  background-color: #e0a800; /* Warna Kuning Gelap */
+}
+
+/* Hover efek untuk semua tombol */
+.btn-custom:hover {
+  opacity: 0.8;
+}
+
+/* Styling ikon dalam tombol */
+.btn-custom i {
+  margin-right: 5px;
+}

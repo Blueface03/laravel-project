@@ -41,8 +41,17 @@ class DashboardController extends Controller
     public function informasi($informasiNumber) {
         return view("back.dashboard.informasi.informasi" . $informasiNumber);
     }
-    public function program($renstraNumber) {
-        return view("back.dashboard.renstra.renstra" . $renstraNumber);
+    public function renstra($renstraNumber)
+    {
+        // Tentukan nama view sesuai dengan parameter renstraNumber
+        $viewName = "back.dashboard.renstra.renstra" . $renstraNumber;
+
+        // Periksa apakah file view ada, jika ada tampilkan, jika tidak tampilkan error 404
+        if (view()->exists($viewName)) {
+            return view($viewName);
+        } else {
+            return abort(404, 'View not found');
+        }
     }
     
 }
