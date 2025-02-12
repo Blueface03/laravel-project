@@ -2,7 +2,7 @@
 @include('back.layout.navbar')
 
 <div class="custom-container">
-    <header class="custom-header">
+    <header class="custom-header" style="padding-top: 100px">
         <h1>Visi & Misi Pemda DIY</h1>
         <div class="custom-divider"></div>
     </header>
