@@ -1,44 +1,32 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-<header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
-    <div class="text-center my-5">
-        <h2>VISI & MISI DINAS DUKCAPIL KOTA TEGAL</h2>
-    </div>
-</header>
-<!-- Content section-->
-<section class="py-5">
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <h2>Full Width Backgrounds</h2>
-                <p class="lead">A single, lightweight helper class allows you to add engaging, full width
-                    background
-                    images to sections of your page.</p>
-                <p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem
-                    starting
-                    here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in
-                    the
-                    universe.</p>
+
+<div class="custom-container">
+    <header class="custom-header">
+        <h1>Visi & Misi Pemda DIY</h1>
+        <div class="custom-divider"></div>
+    </header>
+    <div class="custom-card-container">
+        <div class="custom-card">
+            <div class="custom-card-header">Visi Pemda DIY</div>
+            <div class="custom-card-body">
+                Terwujudnya Peningkatan Kemuliaan Martabat Manusia Jogja
+            </div>
+        </div>
+        <div class="custom-card">
+            <div class="custom-card-header">Misi Pemda DIY</div>
+            <div class="custom-card-body">
+                Kemuliaan martabat manusia Jogja menyandang Misi "Lima Kemuliaan" atau "Pancamulia".
+            </div>
+        </div>
+        <div class="custom-card">
+            <div class="custom-card-header">Visi PPID Dinas Kesehatan DIY</div>
+            <div class="custom-card-body">
+                Memberikan pelayanan yang prima.
             </div>
         </div>
     </div>
-</section>
-<!-- Content section-->
-<section class="py-5">
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <h2>Engaging Background Images</h2>
-                <p class="lead">The background images used in this template are sourced from Unsplash and are
-                    open
-                    source and free to use.</p>
-                <p class="mb-0">I can't tell you how many people say they were turned off from science because of
-                    a
-                    science teacher that completely sucked out all the inspiration and enthusiasm they had for the
-                    course.</p>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
+
 @include('back.layout.footer')
 @include('back.layout.scripts')
