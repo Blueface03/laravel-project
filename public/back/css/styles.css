@@ -9910,13 +9910,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-top: 20px; /* Memberikan jarak dari navbar */
 }
 
-iframe {
-  width: 80%;
-  height: 80vh;  /* Sesuaikan tinggi sesuai konten */
-  border: none;
-}
-
-
 /* Header */
 .header2 {
   text-align: center;

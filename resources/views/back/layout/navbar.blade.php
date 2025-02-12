@@ -57,12 +57,15 @@
                         @php
                             $programs = [
                                 'RENSTRA' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen Rentra 2017-2022', 'url' => '#'],
+                                    ['title' => 'Dokumen Rentra 2022-2027', 'url' => '#'],
                                 ],
-                                'RENJA' => [['title' => 'Dokumen', 'url' => '#'], ['title' => 'Dokumen', 'url' => '#']],
+                                'RENJA' => [
+                                    ['title' => 'Renja 2020-2023', 'url' => '#'], 
+                                    ['title' => 'Renja 2024-2026', 'url' => '#']
+                                ],
                                 'TAHUN ANGGARAN 2021' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => '', 'url' => '#'],
                                     ['title' => 'Dokumen', 'url' => '#'],
                                 ],
                                 'TAHUN ANGGARAN 2022' => [
