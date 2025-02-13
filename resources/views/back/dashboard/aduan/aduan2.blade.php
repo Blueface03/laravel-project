@@ -141,7 +141,7 @@
             <h3>Daftar Aduan</h3>
             <hr>
             <ul>
-                <li onclick="window.location.href='{{ url('/aduan/detailAduan') }}'">
+                <li onclick="window.location.href="{{ url('/detailAduan') }}"">
                     <a href="#">Penyelesaian Jual Beli Rumah</a>
                     <div class="date">📅 Selasa, 21 Januari 2025</div>
                     <div class="user">👤 Rima Fatmi Hastuti</div>
