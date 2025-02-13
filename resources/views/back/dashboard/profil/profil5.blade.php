@@ -1,43 +1,38 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-<!-- Header - set the background image for the header in the line below-->
-<header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
-    <div class="text-center my-5">
-        <h1 class="text-white fs-3 fw-bolder">Full Width Pics</h1>
-        <p class="text-white-50 mb-0">Landing Page Template</p>
-        <h2>PROFIL PEJABAT</h2>
-    </div>
+<header class="custom-header" style="padding-top: 100px">
+    <h1>Profil Pejabat</h1>
+    <div class="custom-divider"></div>
 </header>
-<!-- Content section-->
-<section class="py-5">
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <h2>Full Width Backgrounds</h2>
-                <p class="lead">A single, lightweight helper class allows you to add engaging, full width background
-                    images to sections of your page.</p>
-                <p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem starting
-                    here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in the
-                    universe.</p>
-            </div>
-        </div>
+<div class="profile-card-container">
+    <div class="profile-card">
+      <img src="profile1.jpg" alt="Profile 1">
+      <h3>drg. Pembajun Setyaningastutie, M.Kes</h3>
+      <p><strong>Kepala Dinas Kesehatan</strong></p>
+      <a href="#" class="profile-btn">Lihat Profil</a>
     </div>
-</section>
-<!-- Content section-->
-<section class="py-5">
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <h2>Engaging Background Images</h2>
-                <p class="lead">The background images used in this template are sourced from Unsplash and are open
-                    source and free to use.</p>
-                <p class="mb-0">I can't tell you how many people say they were turned off from science because of a
-                    science teacher that completely sucked out all the inspiration and enthusiasm they had for the
-                    course.</p>
-            </div>
-        </div>
+    
+    <div class="profile-card">
+      <img src="profile2.jpg" alt="Profile 2">
+      <h3>Dra. Siti Badriyah, Apt., M.Kes.</h3>
+      <p><strong>Sekretaris</strong></p>
+      <a href="#" class="profile-btn">Lihat Profil</a>
     </div>
-</section>
+  
+    <div class="profile-card">
+      <img src="profile3.jpg" alt="Profile 3">
+      <h3>dr. Gregorius Anung Trihadi, M.P.H.</h3>
+      <p><strong>Kepala Bidang Pelayanan Kesehatan</strong></p>
+      <a href="#" class="profile-btn">Lihat Profil</a>
+    </div>
+  
+    <div class="profile-card">
+      <img src="profile4.jpg" alt="Profile 4">
+      <h3>M. Agus Priyanto, S.K.M., M.Kes.</h3>
+      <p><strong>Kepala Bidang Sumber Daya Kesehatan</strong></p>
+      <a href="#" class="profile-btn">Lihat Profil</a>
+    </div>
+  </div>  
 
 @include('back.layout.footer')
 @include('back.layout.scripts')

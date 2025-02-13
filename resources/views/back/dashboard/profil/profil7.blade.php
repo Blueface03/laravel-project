@@ -2,14 +2,14 @@
 @include('back.layout.navbar')
 
 <header class="header2" style="padding-top: 100px">
-    <h1>Aduan</h1>
-    <h2>Saluran Pengaduan</h2>
+    <h1>Profil</h1>
+    <h2>Kepegawaian</h2>
     <div class="divider2"></div>
 </header>
 
 
     <div class="container mt-5">
-        <h2>DAFTAR ASET DAN INVENTARISASI BARANG</h2>
+        <h2>DAFTAR KEPEGAWAIAN</h2>
         <div class="row mt-3">
             <div class="col-md-3">
                 <select class="form-select" id="tahunSelect">

@@ -1,11 +1,10 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
 <header class="header2" style="padding-top: 100px">
-    <h1>Aduan</h1>
-    <h2>Saluran Pengaduan</h2>
+    <h1>Profil</h1>
+    <h2>Aset Dan Inventarisasi Barang</h2>
     <div class="divider2"></div>
 </header>
-bod
     <div class="container mt-5">
         <h2>DAFTAR ASET DAN INVENTARISASI BARANG</h2>
         <div class="row mt-3">
