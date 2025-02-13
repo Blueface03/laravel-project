@@ -673,3 +673,229 @@ a {
     width: 90%;
   }
 }
+.system-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.system-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.system-card-highlight {
+  background-color: #f7f8fc; /* Light Gray Highlight */
+}
+
+.system-card img {
+  width: 80px;
+  height: auto;
+  margin: 15px 0;
+}
+
+.system-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.system-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.system-card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-system {
+  padding: 8px 15px;
+  font-weight: bold;
+  background-color: #2979ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid #2979ff;
+  transition: 0.3s;
+}
+
+.btn-system:hover {
+  background-color: #1a5fd0;
+  border-color: #1a5fd0;
+}
+
+.btn-system-outline {
+  padding: 8px 15px;
+  font-weight: bold;
+  background-color: white;
+  color: #2979ff;
+  border: 2px solid #2979ff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-system-outline:hover {
+  background-color: #2979ff;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .system-card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .system-card {
+      width: 90%;
+  }
+}
+/* Container utama */
+.aduan-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Daftar Aduan */
+.aduan-list {
+  width: 60%;
+}
+
+.aduan-list h2 {
+  font-size: 22px;
+  color: #333;
+}
+
+.aduan-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.aduan-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.aduan-header .aduan-user {
+  font-weight: bold;
+}
+
+.aduan-card h3 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.aduan-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Form Aduan */
+.aduan-form {
+  width: 35%;
+}
+
+.aduan-form h2 {
+  font-size: 22px;
+  color: #333;
+}
+
+.aduan-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aduan-form input, 
+.aduan-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.aduan-form textarea {
+  height: 60px;
+  resize: none;
+}
+
+/* Captcha */
+.captcha-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.captcha-text {
+  font-size: 18px;
+  font-family: monospace;
+  color: #444;
+}
+
+.recaptcha-btn {
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recaptcha-btn:hover {
+  background: #0056b3;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #c9302c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .aduan-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .aduan-list, .aduan-form {
+      width: 90%;
+  }
+}
