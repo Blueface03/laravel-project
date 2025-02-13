@@ -146,7 +146,7 @@
                     <div class="date">📅 Selasa, 21 Januari 2025</div>
                     <div class="user">👤 Rima Fatmi Hastuti</div>
                 </li>
-                <li onclick="window.location.href='detailAduan.html?title=Imunisasi%20Catin%20Wanita&date=Jum’at,%2015%20November%202024%20-%2014:29:46&user=Rio%20Handoko&content=Izin%20bertanya...%20tindakan%'">
+                <li onclick="window.location.href='detailAduan.blade.php?title=Imunisasi%20Catin%20Wanita&date=Jum’at,%2015%20November%202024%20-%2014:29:46&user=Rio%20Handoko&content=Izin%20bertanya...%20tindakan%'">
                     <a href="#">Imunisasi Catin Wanita</a>
                     <div class="date">📅 Jum’at, 15 November 2024</div>
                     <div class="user">👤 Rio Handoko</div>
