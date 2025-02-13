@@ -1,6 +1,9 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-
+<header class="custom-header" style="padding-top: 100px">
+    <h1>LHKPN</h1>
+    <div class="custom-divider"></div>
+</header>
 <div class="unique-card-container">
     <div class="unique-card card-1">
       <h3>drg. Pembajun Setyaningastutie, M.Kes</h3>
