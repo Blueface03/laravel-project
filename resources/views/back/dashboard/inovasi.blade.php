@@ -1,5 +1,10 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
+<header class="header2" style="padding-top: 100px">
+    <h1>Inovasi</h1>
+    <h2>Sistem Infromasi</h2>
+    <div class="divider2"></div>
+</header>
 <div class="system-card-container">
     <div class="system-card">
         <h3>JAMU LAN PIJAT, AGAWE AWET URIP, TINEBIH ING RUBEDO</h3>

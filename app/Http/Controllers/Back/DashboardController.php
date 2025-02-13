@@ -27,11 +27,6 @@ class DashboardController extends Controller
     {
         return view('back.dashboard.kebijakan');
     }
-    public function detailAduan()
-    {
-        return view('back.dashboard.detailAduan');
-    }
-
     public function profile($profileNumber) {
         return view("back.dashboard.profil.profil" . $profileNumber);
     }
