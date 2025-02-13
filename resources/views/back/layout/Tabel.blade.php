@@ -32,7 +32,7 @@
                 <tr data-tahun="2023" data-judul="Aset dan Inventarisasi Barang Tahun 2023">
                     <td>1</td>
                     <td>Aset dan Inventarisasi Barang Tahun 2023</td>
-                    <td>
+                    <td class="button-group3">
                         <a href="#" class="btn-custom btn-custom-download-1"><i class="fa fa-download"></i> Download</a>
                         <a href="#" class="btn-custom btn-custom-read-2"><i class="fa fa-book"></i> Baca</a>
                         <a href="#" class="btn-custom btn-custom-link-3"><i class="fa fa-link"></i> Link</a>
@@ -41,7 +41,7 @@
                 <tr data-tahun="2022" data-judul="Aset dan Inventarisasi Barang Tahun 2022">
                     <td>2</td>
                     <td>Aset dan Inventarisasi Barang Tahun 2022</td>
-                    <td>
+                    <td class="button-group3">
                         <a href="#" class="btn-custom btn-custom-download-1"><i class="fa fa-download"></i> Download</a>
                         <a href="#" class="btn-custom btn-custom-read-2"><i class="fa fa-book"></i> Baca</a>
                         <a href="#" class="btn-custom btn-custom-link-3"><i class="fa fa-link"></i> Link</a>
@@ -50,7 +50,7 @@
                 <tr data-tahun="2021" data-judul="Aset dan Inventarisasi Barang Tahun 2021">
                     <td>3</td>
                     <td>Aset dan Inventarisasi Barang Tahun 2021</td>
-                    <td>
+                    <td class="button-group3">
                         <a href="#" class="btn-custom btn-custom-download-1"><i class="fa fa-download"></i> Download</a>
                         <a href="#" class="btn-custom btn-custom-read-2"><i class="fa fa-book"></i> Baca</a>
                         <a href="#" class="btn-custom btn-custom-link-3"><i class="fa fa-link"></i> Link</a>

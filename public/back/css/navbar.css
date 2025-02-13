@@ -530,3 +530,9 @@ a {
       width: 90%;
   }
 }
+
+.button-group3 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
