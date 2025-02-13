@@ -37,3 +37,18 @@ document.getElementById('tahunSelect').addEventListener('change', filterTable);
                 }
             });
         }
+    // Function to show complaint details when clicked
+    function showComplaintDetail(title, text, user, date) {
+        // Set the complaint detail data dynamically
+        document.getElementById('complaintTitle').innerText = title;
+        document.getElementById('complaintText').innerHTML = `
+            <div class="complaint-header">
+                <span class="complaint-user"><strong>${user}</strong></span>
+                <span class="complaint-date">📅 ${date}</span>
+            </div>
+            <p>${text}</p>
+        `;
+
+        // Show the complaint detail section
+        document.getElementById('complaintDetail').style.display = 'block';
+    }
