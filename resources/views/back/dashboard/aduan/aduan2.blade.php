@@ -1,5 +1,10 @@
-@include('back.layout.assets')
+@include('back.layout.stylesheet');
 @include('back.layout.navbar')
+<header class="header2" style="padding-top: 100px">
+    <h1>Aduan</h1>
+    <h2>Formulir Aduan</h2>
+    <div class="divider2"></div>
+</header>
 <div class="aduan-container">
     <!-- Left Side: Daftar Aduan -->
     <div class="aduan-list">
@@ -7,11 +12,11 @@
 
         <div class="aduan-card">
             <div class="aduan-header">
-                <span class="aduan-user">👤 Rima Fatmi Hastuti</span>
+                <span class="aduan-user">👤 Kalisal</span>
                 <span class="aduan-date">📅 Selasa, 21 Januari 2025 - 10:14:54</span>
             </div>
             <h3>Penyelesaian <strong>Jual Beli Rumah</strong></h3>
-            <p>Pegawai Dinas Kesehatan Provinsi DIY a.n. Rima Fatmi Hastuti telah mengembalikan uang DP pembelian rumah sesuai kesepakatan. Kami ucapkan terima ...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, architecto aperiam perspiciatis tempore deserunt, illum nostrum dicta illo delectus dolor ad quae unde assumenda reiciendis? Voluptates fuga rem reiciendis debitis!</p>
         </div>
 
         <div class="aduan-card">
@@ -57,6 +62,56 @@
 
 
 @include('back.layout.footer')
-@yield('content')
-@yield('content')
-@yield('content')
+<div class="complaint-container">
+    <!-- Left Side: Complaint Detail -->
+    <div class="complaint-detail">
+        <h2>Bakar Sampah</h2>
+
+        <div class="complaint-card">
+            <div class="complaint-header">
+                <span class="complaint-user"><strong>NN</strong></span>
+                <span class="complaint-date">📅 Sabtu, 14 September 2024 - 08:04:22</span>
+            </div>
+            <p>Mohon tindakan nya karena tetangga kanan kiri bakar sampah setiap hari dan sangat berbahaya di musim kemarau yg kering seperti ini. Mohon segera ditindak</p>
+        </div>
+
+        <div class="response-card">
+            <div class="response-header">
+                <span class="response-user"><strong>ADMINISTRATOR</strong></span>
+                <span class="response-date">📅 17 September 2024 - 11:20:38</span>
+            </div>
+            <p>Yth. Sdr NN, Terima kasih telah menghubungi Dinas Kesehatan DIY terkait aduan tentang pembakaran sampah di lingkungan tersebut. 
+               Aduan telah kami teruskan ke Dinas Kesehatan Kabupaten Sleman untuk ditindaklanjuti. Jika dirasa belum ada solusi, kami persilakan untuk 
+               menyampaikan ke Puskesmas terdekat atau kelurahan setempat. Demikian, terima kasih.</p>
+        </div>
+    </div>
+
+    <!-- Right Side: Complaint List -->
+    <div class="complaint-list">
+        <input type="text" placeholder="Cari berdasarkan subjek..." class="search-bar">
+        
+        <h3>DAFTAR ADUAN</h3>
+        <hr class="blue-line">
+
+        <ul>
+            <li><a href="#">Penyelesaian Jual Beli Rumah</a>
+                <span class="date">📅 21 Januari 2025</span>
+                <span class="user">👤 Rima Fatmi Hastuti</span>
+            </li>
+            <li><a href="#">Imunisasi Catin Wanita</a>
+                <span class="date">📅 15 November 2024</span>
+                <span class="user">👤 Rio Handoko</span>
+            </li>
+            <li><a href="#">Ambulance Puskesmas</a>
+                <span class="date">📅 18 Juli 2024</span>
+                <span class="user">👤 anonim</span>
+            </li>
+            <li><a href="#">Sertifikat Vaksin</a>
+                <span class="date">📅 03 Juli 2024</span>
+                <span class="user">👤 Ody Liba Laksana</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@include('back.layout.scripts')
