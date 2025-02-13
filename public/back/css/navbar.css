@@ -524,6 +524,13 @@ a {
   font-size: 16px;
   line-height: 1.5;
 }
+.button-group3 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* Membuat tombol pindah baris saat layar kecil */
+  margin-top: 10px;
+}
 
 /* Optional: Add responsiveness */
 @media (max-width: 768px) {
@@ -558,6 +565,8 @@ a {
     width: 100%; /* Tombol mengambil lebar penuh dalam kolom */
   }
 }
+
+
 .unique-card-container {
   display: flex;
   flex-wrap: wrap;
