@@ -38,6 +38,9 @@
             <h3>Bakar Sampah</h3>
             <p>Mohon tindakan nya karena tetangga kanan kiri bakar sampah setiap hari dan sangat berbahaya di musim kemarau yang kering seperti ini. Mohon segera ...</p>
         </div>
+        <div class="button-group2">
+        <a href="#" class="btn-custom btn-custom-download-1"> Lihat Lainnya</a>
+        </div>
     </div>
 
     <!-- Right Side: Form Aduan -->
