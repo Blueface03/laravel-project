@@ -60,11 +60,11 @@
                                     ['title' => 'Dokumen Renstra 2022-2027', 'url' => url('/renstra/2')],
                                 ],
                                 'RENJA' => [
-                                    ['title' => 'Renja 2020-2023', 'url' => '#'],
-                                    ['title' => 'Renja 2024-2026', 'url' => '#'],
+                                    ['title' => 'Renja 2020-2023', 'url' => url('/renja/1')],
+                                    ['title' => 'Renja 2024-2026', 'url' => url('/renja/2')],
                                 ],
                                 'TAHUN ANGGARAN 2021' => [
-                                    ['title' => '', 'url' => '#'],
+                                    ['title' => '', 'url' => url('/anggaran2021/1')],
                                     ['title' => 'Dokumen', 'url' => '#'],
                                 ],
                                 'TAHUN ANGGARAN 2022' => [
@@ -178,7 +178,7 @@
                         @endforeach
 
                         <!-- Static Links -->
-                        <li><a class="dropdown__link" href="#program1">PERMOHONAN INFORMASI</a></li>
+                        <li><a class="dropdown__link" href="{{ url('/informasi/1') }}">PERMOHONAN INFORMASI</a></li>
                         <li><a class="dropdown__link" href="#program2">LAPORAN INFORMASI PUBLIK</a></li>
                         <li><a class="dropdown__link" href="#program2">PENGADAAN BARANG DAN JASA</a></li>
                         <li><a class="dropdown__link" href="#program1">AGENDA PIMPINAN</a></li>

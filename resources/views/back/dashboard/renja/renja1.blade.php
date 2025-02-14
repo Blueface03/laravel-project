@@ -1,10 +1,10 @@
-@include ('back.layout.stylesheet')
-@include ('back.layout.navbar')
+@include('back.layout.stylesheet')
+@include('back.layout.navbar')
 
+@include('back.layout.headrenja',['title' => 'renja 2020-2023'])
 <!-- Container -->
-<div class="container2">
+<div class="container2" style="padding-top: 0px">
     <section class="document-section2">
-        <h3>Dokumen Renstra 2017-2022</h3>
 
         <div class="document-item2">
             <h4>Renstra 2017-2022 Perubahan</h4>
@@ -40,6 +40,7 @@
         </div>
     </section>
 </div>
+
 
 @include('back.layout.footer')
 @include('back.layout.scripts')

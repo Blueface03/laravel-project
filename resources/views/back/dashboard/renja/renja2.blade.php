@@ -6,8 +6,8 @@
         <h3>Dokumen Renstra 2017-2022</h3>
 
         <div class="document-item2">
-            <h4>Renstra 2017-2022 Perubahan</h4>
-            <p>Renstra 2017-2022 Perubahan</p>
+            <h4>judul</h4>
+            <p>judul</p>
             <div class="button-group2">
                 <a href="#" class="btn-custom btn-custom-download-1"><i class="fas fa-download"></i> Download</a>
                 <a href="#" class="btn-custom btn-custom-read-2"><i class="fas fa-book-open"></i> Lihat</a>
@@ -17,8 +17,8 @@
         </div>
 
         <div class="document-item2">
-            <h4>IKU Dinas Kesehatan DIY Tahun 2018-2022</h4>
-            <p>IKU Dinas Kesehatan DIY Tahun 2018-2022</p>
+            <h4>judul</h4>
+            <p>judul</p>
             <div class="button-group2">
                 <a href="#" class="btn-custom btn-custom-download-1"><i class="fas fa-download"></i> Download</a>
                 <a href="#" class="btn-custom btn-custom-read-2"><i class="fas fa-book-open"></i> Lihat</a>
@@ -28,8 +28,8 @@
         </div>
 
         <div class="document-item2">
-            <h4>IKU Dinas Kesehatan DIY Tahun 2018-2022 Perubahan</h4>
-            <p>IKU Dinas Kesehatan DIY Tahun 2018-2022 Perubahan</p>
+            <h4>judul</h4>
+            <p>judul</p>
             <div class="button-group2">
                 <a href="#" class="btn-custom btn-custom-download-1"><i class="fas fa-download"></i> Download</a>
                 <a href="#" class="btn-custom btn-custom-read-2"><i class="fas fa-book-open"></i> Lihat</a>
