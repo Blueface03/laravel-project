@@ -196,7 +196,7 @@ a {
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
   color: var(--white-color);
-  background-color: var(--black-color-light);
+  background-color: #1D84E6;  /* Warna biru untuk dropdown */
   display: flex;
   align-items: center;
   column-gap: 0;  /* Menghilangkan jarak antar elemen */
@@ -213,7 +213,7 @@ a {
 
 .dropdown__link:hover, 
 .dropdown__sublink:hover {
-  background-color: var(--black-color);
+  background-color: #1568B4;  /* Warna biru lebih gelap pada hover */
 }
 
 .dropdown__menu, 
@@ -242,6 +242,7 @@ a {
   padding: 0;  /* Removing padding */
   margin: 0;  /* Removing margin */
   position: relative;
+  background-color: #1D84E6;  /* Warna biru untuk submenu */
 }
 
 /*=============== DROPDOWN SUBSUBMENU ===============*/
@@ -256,6 +257,7 @@ a {
   opacity: 0;
   pointer-events: none;
   transition: opacity .3s, left .3s;
+  background-color: #1D84E6;  /* Warna biru untuk subsubmenu */
 }
 
 /* Show dropdown subsubmenu */
@@ -276,7 +278,7 @@ a {
 }
 
 .dropdown__subsubmenu li:hover {
-  background-color: #34495e;
+  background-color: #1568B4;  /* Warna biru lebih gelap pada hover */
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -288,6 +290,36 @@ a {
 
   .nav__link {
     padding-inline: 1rem;
+  }
+
+  .dropdown__link, 
+  .dropdown__sublink {
+    padding: 1rem 1rem 1rem 2.5rem;
+  }
+
+  .dropdown__menu, 
+  .dropdown__submenu {
+    position: static;  /* Menampilkan dropdown secara normal untuk mobile */
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  /* Dropdown for small screens */
+  .dropdown__item:hover .dropdown__menu, 
+  .dropdown__subitem:hover > .dropdown__submenu {
+    max-height: 1000px;
+  }
+
+  /* Styling for mobile */
+  .dropdown__submenu {
+    position: static;
+    left: 0;
+    top: 0;
+  }
+
+  .dropdown__subsubmenu {
+    left: 0;
+    top: 0;
   }
 }
 
