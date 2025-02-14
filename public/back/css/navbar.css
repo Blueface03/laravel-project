@@ -243,6 +243,41 @@ a {
   margin: 0;  /* Removing margin */
 }
 
+/*=============== DROPDOWN SUBSUBMENU ===============*/
+.dropdown__subsubmenu {
+  display: flex;  /* Display items in a column */
+  flex-direction: column;
+  padding: 0;  /* Removing padding */
+  margin: 0;  /* Removing margin */
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s, top .3s;
+}
+
+/* Show dropdown subsubmenu */
+.dropdown__submenu-item:hover > .dropdown__subsubmenu {
+  opacity: 1;
+  top: 0;
+  pointer-events: initial;
+  transition: top .3s;
+}
+
+.dropdown__subsubmenu li {
+  padding: 8px 12px;
+}
+
+.dropdown__subsub-link {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown__subsubmenu li:hover {
+  background-color: #34495e;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
@@ -331,7 +366,16 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
+
+  /* Show dropdown subsubmenu */
+  .dropdown__submenu-item:hover > .dropdown__subsubmenu {
+    opacity: 1;
+    top: 0;
+    pointer-events: initial;
+    transition: top .3s;
+  }
 }
+
 
 /* Kontainer utama yang menampung grup layanan utama tombol */
 .btn-container {
