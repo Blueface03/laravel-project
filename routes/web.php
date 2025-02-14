@@ -29,5 +29,6 @@ Route::get('/aduan/{aduanNumber}', [DashboardController::class, 'aduan']);
 Route::get('/infodisduk/{infodisdukNumber}', [DashboardController::class, 'infodisduk']);
 Route::get('/informasi/{informasiNumber}', [DashboardController::class, 'informasi']);
 Route::get('/renstra/{renstraNumber}', [DashboardController::class, 'renstra']);
+Route::get('/renja/{renjaNumber}', [DashboardController::class, 'renja']);
 
 

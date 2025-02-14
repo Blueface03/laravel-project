@@ -144,8 +144,19 @@
                         @php
                             $informasi = [
                                 'PPID/INFORMASI PUBLIK' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    [
+                                        'title' => 'Dokumen',
+                                        'url' => '#',
+                                        'sub_documents' => [
+                                            ['title' => 'Dokumen PPID 1', 'url' => '#'],
+                                            ['title' => 'Dokumen PPID 2', 'url' => '#'],
+                                        ],
+                                    ],
+                                    [
+                                        'title' => 'Dokumen 2',
+                                        'url' => '#',
+                                        'sub_documents' => [['title' => 'Dokumen PPID 3', 'url' => '#']],
+                                    ],
                                 ],
                                 'ALUR LAYANAN' => [
                                     ['title' => 'Dokumen', 'url' => '#'],
