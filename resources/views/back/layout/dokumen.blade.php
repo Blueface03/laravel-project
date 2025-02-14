@@ -17,7 +17,14 @@
 <!-- Container -->
 <div class="container2">
     <section class="document-section2">
-        <h3>Dokumen Renstra 2017-2022</h3>
+        <h3> @switch($title)
+            @case('Dokumen Renstra 2017-2022')
+                Dokumen Renstra 2017-2022
+            @break
+
+            @default
+                Dokumen Renstra 2023-2027
+        @endswitch</h3>
 
         <div class="document-item2">
             <h4>Renstra 2017-2022 Perubahan</h4>

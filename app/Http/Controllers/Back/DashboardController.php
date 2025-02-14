@@ -40,6 +40,10 @@ class DashboardController extends Controller
     public function informasi($informasiNumber) {
         return view("back.dashboard.informasi.informasi" . $informasiNumber);
     }
+
+
+
+    /* program kegiatan */
     public function renstra($renstraNumber)
     {
         // Tentukan nama view sesuai dengan parameter renstraNumber
