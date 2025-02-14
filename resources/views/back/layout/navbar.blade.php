@@ -144,19 +144,8 @@
                         @php
                             $informasi = [
                                 'PPID/INFORMASI PUBLIK' => [
-                                    [
-                                        'title' => 'Dokumen',
-                                        'url' => '#',
-                                        'sub_documents' => [
-                                            ['title' => 'Dokumen PPID 1', 'url' => '#'],
-                                            ['title' => 'Dokumen PPID 2', 'url' => '#'],
-                                        ],
-                                    ],
-                                    [
-                                        'title' => 'Dokumen 2',
-                                        'url' => '#',
-                                        'sub_documents' => [['title' => 'Dokumen PPID 3', 'url' => '#']],
-                                    ],
+                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen', 'url' => '#'],
                                 ],
                                 'ALUR LAYANAN' => [
                                     ['title' => 'Dokumen', 'url' => '#'],
@@ -178,28 +167,15 @@
 
                                 <ul class="dropdown__submenu">
                                     @foreach ($documents as $document)
-                                        <li class="dropdown__submenu-item">
+                                        <li>
                                             <a href="{{ $document['url'] }}" class="dropdown__sublink">
                                                 <i class="ri-file-list-line"></i> {{ $document['title'] }}
                                             </a>
-                                            @isset($document['sub_documents'])
-                                                <ul class="dropdown__subsubmenu">
-                                                    @foreach ($document['sub_documents'] as $sub_document)
-                                                        <li>
-                                                            <a href="{{ $sub_document['url'] }}"
-                                                                class="dropdown__subsub-link">
-                                                                {{ $sub_document['title'] }}
-                                                            </a>
-                                                        </li>
-                                                    @endforeach
-                                                </ul>
-                                            @endisset
                                         </li>
                                     @endforeach
                                 </ul>
                             </li>
                         @endforeach
-
 
                         <!-- Static Links -->
                         <li><a class="dropdown__link" href="#program1">PERMOHONAN INFORMASI</a></li>

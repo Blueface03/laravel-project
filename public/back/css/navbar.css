@@ -196,7 +196,7 @@ a {
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
   color: var(--white-color);
-  background-color: #1D84E6;  /* Warna biru untuk dropdown */
+  background-color: var(--black-color-light);
   display: flex;
   align-items: center;
   column-gap: 0;  /* Menghilangkan jarak antar elemen */
@@ -213,7 +213,7 @@ a {
 
 .dropdown__link:hover, 
 .dropdown__sublink:hover {
-  background-color: #1568B4;  /* Warna biru lebih gelap pada hover */
+  background-color: var(--black-color);
 }
 
 .dropdown__menu, 
@@ -241,44 +241,6 @@ a {
   flex-direction: column;  /* Displaying items vertically in the dropdown */
   padding: 0;  /* Removing padding */
   margin: 0;  /* Removing margin */
-  position: relative;
-  background-color: #1D84E6;  /* Warna biru untuk submenu */
-}
-
-/*=============== DROPDOWN SUBSUBMENU ===============*/
-.dropdown__subsubmenu {
-  display: flex;  /* Display items in a row */
-  flex-direction: column;
-  padding: 0;  /* Removing padding */
-  margin: 0;  /* Removing margin */
-  position: absolute;
-  top: 0;
-  left: 100%;  /* Position it to the right of the parent submenu */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .3s, left .3s;
-  background-color: #1D84E6;  /* Warna biru untuk subsubmenu */
-}
-
-/* Show dropdown subsubmenu */
-.dropdown__submenu-item:hover > .dropdown__subsubmenu {
-  opacity: 1;
-  left: 100%;  /* Make it appear beside the submenu */
-  pointer-events: initial;
-  transition: left .3s;
-}
-
-.dropdown__subsubmenu li {
-  padding: 8px 12px;
-}
-
-.dropdown__subsub-link {
-  color: white;
-  text-decoration: none;
-}
-
-.dropdown__subsubmenu li:hover {
-  background-color: #1568B4;  /* Warna biru lebih gelap pada hover */
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -290,36 +252,6 @@ a {
 
   .nav__link {
     padding-inline: 1rem;
-  }
-
-  .dropdown__link, 
-  .dropdown__sublink {
-    padding: 1rem 1rem 1rem 2.5rem;
-  }
-
-  .dropdown__menu, 
-  .dropdown__submenu {
-    position: static;  /* Menampilkan dropdown secara normal untuk mobile */
-    opacity: 1;
-    pointer-events: initial;
-  }
-
-  /* Dropdown for small screens */
-  .dropdown__item:hover .dropdown__menu, 
-  .dropdown__subitem:hover > .dropdown__submenu {
-    max-height: 1000px;
-  }
-
-  /* Styling for mobile */
-  .dropdown__submenu {
-    position: static;
-    left: 0;
-    top: 0;
-  }
-
-  .dropdown__subsubmenu {
-    left: 0;
-    top: 0;
   }
 }
 
@@ -399,16 +331,7 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
-
-  /* Show dropdown subsubmenu beside the submenu */
-  .dropdown__submenu-item:hover > .dropdown__subsubmenu {
-    opacity: 1;
-    left: 100%;
-    pointer-events: initial;
-    transition: left .3s;
-  }
 }
-
 
 /* Kontainer utama yang menampung grup layanan utama tombol */
 .btn-container {
