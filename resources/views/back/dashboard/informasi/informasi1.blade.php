@@ -1,6 +1,9 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-    
+<header class="header2" style="padding-top: 100px">
+    <h1>Kebijakan Privasi</h1>
+    <div class="divider2"></div>
+</header>   
 <form class="info-request-form">
     <label for="namaPemohon" class="input-label">Nama Pemohon</label>
     <input type="text" id="namaPemohon" class="input-field" name="namaPemohon">

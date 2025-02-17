@@ -64,24 +64,24 @@
                                     ['title' => 'Renja 2024-2026', 'url' => url('/renja/2')],
                                 ],
                                 'TAHUN ANGGARAN 2021' => [
-                                    ['title' => '', 'url' => url('/anggaran2021/1')],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2021/1')],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2021/2')],
                                 ],
                                 'TAHUN ANGGARAN 2022' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2022/1')],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2022/2')],
                                 ],
                                 'TAHUN ANGGARAN 2023' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2023/1')],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2023/2')],
                                 ],
                                 'TAHUN ANGGARAN 2024' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2024/1')],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2024/2')],
                                 ],
                                 'TAHUN ANGGARAN 2025' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2025/1')],
+                                    ['title' => 'Dokumen', 'url' => url('/anggaran2025/2')],
                                 ],
                             ];
                         @endphp
@@ -144,16 +144,21 @@
                         @php
                             $informasi = [
                                 'PPID/INFORMASI PUBLIK' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Informasi Berkala', 'url' => url('/ppid/1')],
+                                    ['title' => 'informasi Setiap Saat', 'url' => url('/ppid/2')],
+                                    ['title' => 'informasi Serta Merta', 'url' => url('/ppid/3')],
+                                    ['title' => 'Daftar Informasi Publik', 'url' => url('/ppid/4')],
+                                    ['title' => 'Daftar Informasi Publik Yang Dikecualikan', 'url' => url('/ppid/5')],
                                 ],
                                 'ALUR LAYANAN' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Alur Permohonan Informasi', 'url' => url('/alurlayanan/1')],
+                                    ['title' => 'Alur Pengajuan Keberatan Informasi Publik', 'url' => url('/alurlayanan/2')],
+                                    ['title' => 'Alur Penyelesaian Sengketan', 'url' => url('/alurlayanan/3')],
                                 ],
                                 'PRODUK HUKUM' => [
-                                    ['title' => 'Dokumen', 'url' => '#'],
-                                    ['title' => 'Dokumen', 'url' => '#'],
+                                    ['title' => 'Kumpulan Produk Hukum', 'url' => url('/produkhukum/1')],
+                                    ['title' => 'Rancangan Peraturan', 'url' => url('/produkhukum/2')],
+                                    ['title' => 'Standar Operasional Prosedur', 'url' => url('/produkhukum/3')],
                                 ],
                             ];
                         @endphp
@@ -179,9 +184,9 @@
 
                         <!-- Static Links -->
                         <li><a class="dropdown__link" href="{{ url('/informasi/1') }}">PERMOHONAN INFORMASI</a></li>
-                        <li><a class="dropdown__link" href="#program2">LAPORAN INFORMASI PUBLIK</a></li>
-                        <li><a class="dropdown__link" href="#program2">PENGADAAN BARANG DAN JASA</a></li>
-                        <li><a class="dropdown__link" href="#program1">AGENDA PIMPINAN</a></li>
+                        <li><a class="dropdown__link" href="{{ url('/informasi/2') }}">LAPORAN INFORMASI PUBLIK</a></li>
+                        <li><a class="dropdown__link" href="{{ url('/informasi/3') }}">PENGADAAN BARANG DAN JASA</a></li>
+                        <li><a class="dropdown__link" href="{{ url('/informasi/4') }}">AGENDA PIMPINAN</a></li>
                     </ul>
                 </li>
 
