@@ -169,18 +169,19 @@ class DashboardController extends Controller
     }
 
     public function download($filename)
-    {
-        // Menentukan path file PDF
-        $filePath = public_path('back/assets/pdf/' . $filename);
+{
+    // Menentukan path file PDF
+    $filePath = public_path('back/assets/pdf/' . $filename);
 
-        // Memeriksa apakah file ada
-        if (DashboardController::exists($filePath)) {
-            return response()->download($filePath);
-        }
-
-        // Jika file tidak ditemukan
-        return abort(404, 'File not found.');
+    // Memeriksa apakah file ada
+    if (File::exists($filePath)) {
+        return response()->download($filePath);
     }
+
+    // Jika file tidak ditemukan
+    return abort(404, 'File not found.');
+}
+
 }
 
 
