@@ -62,11 +62,4 @@ document.getElementById('tahunSelect').addEventListener('change', filterTable);
         document.body.removeChild(tempInput);
         alert("Link telah disalin!");
     }
-
-    window.onload = function() {
-        var download = document.createElement('a');
-        download.href = '{{ asset("storage/path/to/file.pdf") }}'; // Ganti dengan URL file PDF Anda
-        download.download = 'file.pdf'; // Nama file yang akan diunduh
-        download.click(); // Memicu klik pada link
-      }
-      
+    
