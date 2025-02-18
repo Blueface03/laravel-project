@@ -29,19 +29,23 @@ class DashboardController extends Controller
     {
         return view('back.dashboard.kebijakan');
     }
-    public function profile($profileNumber) {
+    public function profile($profileNumber)
+    {
         return view("back.dashboard.profil.profil" . $profileNumber);
     }
 
-    public function aduan($aduanNumber) {
+    public function aduan($aduanNumber)
+    {
         return view("back.dashboard.aduan.aduan" . $aduanNumber);
     }
-    public function infodisduk($infodisdukNumber) {
+    public function infodisduk($infodisdukNumber)
+    {
         return view("back.dashboard.infodisduk.infodisduk" . $infodisdukNumber);
     }
 
     /* informasi */
-    public function informasi($informasiNumber) {
+    public function informasi($informasiNumber)
+    {
         return view("back.dashboard.informasi.informasi" . $informasiNumber);
     }
     public function alurlayanan($alurlayananNumber)
@@ -169,18 +173,18 @@ class DashboardController extends Controller
     }
 
     public function download($filename)
-{
-    // Menentukan path file PDF
-    $filePath = public_path('back/assets/pdf/' . $filename);
+    {
+        // Menentukan path file PDF
+        $filePath = public_path('back/assets/pdf/' . $filename);
 
-    // Memeriksa apakah file ada
-    if (File::exists($filePath)) {
-        return response()->download($filePath);
+        // Memeriksa apakah file ada
+        if (File::exists($filePath)) {
+            return response()->download($filePath);
+        }
+
+        // Jika file tidak ditemukan
+        return abort(404, 'File not found.');
     }
-
-    // Jika file tidak ditemukan
-    return abort(404, 'File not found.');
-}
 
 }
 

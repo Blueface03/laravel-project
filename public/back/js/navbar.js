@@ -67,5 +67,4 @@ document.getElementById('tahunSelect').addEventListener('change', filterTable);
         var link = document.createElement('a');
         link.href = '{{ asset("storage/path/to/file.pdf") }}'; // Ganti dengan URL file PDF Anda
         link.download = 'file.pdf'; // Nama file yang akan diunduh
-        link.click(); // Memicu klik pada link
       };
