@@ -44,3 +44,6 @@ Route::get('/anggaran2022/{anggaran2022_Number}', [DashboardController::class, '
 Route::get('/anggaran2023/{anggaran2023_Number}', [DashboardController::class, 'anggaran2023']);
 Route::get('/anggaran2024/{anggaran2024_Number}', [DashboardController::class, 'anggaran2024']);
 Route::get('/anggaran2025/{anggaran2025_Number}', [DashboardController::class, 'anggaran2025']);
+
+
+Route::get('/download-pdf', [DashboardController::class, 'download'])->name('download.pdf');

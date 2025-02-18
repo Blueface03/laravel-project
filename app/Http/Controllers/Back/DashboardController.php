@@ -165,4 +165,20 @@ class DashboardController extends Controller
             return abort(404, 'View not found');
         }
     }
+
+    public function download()
+    {
+        // Menentukan lokasi file PDF
+        $filePath = storage_path('app/public/path/to/file.pdf');
+
+        // Memeriksa apakah file ada
+        if (file_exists($filePath)) {
+            return response()->download($filePath);
+        }
+
+        // Menangani kasus jika file tidak ditemukan
+        return abort(404, 'File not found.');
+    }
 }
+
+
