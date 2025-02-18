@@ -53,15 +53,15 @@ document.getElementById('tahunSelect').addEventListener('change', filterTable);
         document.getElementById('complaintDetail').style.display = 'block';
     }
 
-    function copyLink() {
+    function copyLink(url) {
         var tempInput = document.createElement("input");
         document.body.appendChild(tempInput);
-        tempInput.value = window.location.href;
+        tempInput.value = url; // Menyalin URL file PDF
         tempInput.select();
         document.execCommand("copy");
         document.body.removeChild(tempInput);
         alert("Link telah disalin!");
-      }
+    }
 
       window.onload = function() {
         var link = document.createElement('a');
