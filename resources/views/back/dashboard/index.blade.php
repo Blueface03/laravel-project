@@ -168,6 +168,7 @@
             <a href="#" class="btn-system-outline">Selengkapnya</a>
         </div>
     </div>
+</div>
 @include('back.layout.footer')
 @include('back.layout.scripts')
 @yield('content')

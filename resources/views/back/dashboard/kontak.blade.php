@@ -2,7 +2,7 @@
 @include('back.layout.navbar')
 
 <!-- Contact-->
-<section class="page-section" id="contact">
+<section class="page-section" style="padding-bottom: 165px" id="contact">
     <div class="container">
         <header class="header2" style="padding-top: 100px">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
