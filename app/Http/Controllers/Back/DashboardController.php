@@ -166,17 +166,17 @@ class DashboardController extends Controller
         }
     }
 
-    public function download()
+    public function download($filename)
     {
-        // Menentukan lokasi file PDF
-        $filePath = storage_path('app/public/path/to/file.pdf');
+        // Menentukan path file PDF
+        $filePath = public_path('back/assets/pdf/' . $filename);
 
         // Memeriksa apakah file ada
-        if (file_exists($filePath)) {
+        if (DashboardController::exists($filePath)) {
             return response()->download($filePath);
         }
 
-        // Menangani kasus jika file tidak ditemukan
+        // Jika file tidak ditemukan
         return abort(404, 'File not found.');
     }
 }
