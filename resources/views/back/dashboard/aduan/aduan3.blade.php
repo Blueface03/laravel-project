@@ -1,4 +1,4 @@
-@include('back.layout.assets')
+@include('back.layout.stylesheet')
 @include('back.layout.navbar')
 <section class="page-section" id="services">
     <div class="container">
@@ -13,6 +13,4 @@
 </section>
 
 @include('back.layout.footer')
-@yield('content')
-@yield('content')
-@yield('content')
+@include('back.layout.scripts')

@@ -52,3 +52,13 @@ document.getElementById('tahunSelect').addEventListener('change', filterTable);
         // Show the complaint detail section
         document.getElementById('complaintDetail').style.display = 'block';
     }
+
+    function copyLink() {
+        var tempInput = document.createElement("input");
+        document.body.appendChild(tempInput);
+        tempInput.value = window.location.href;
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Link telah disalin!");
+      }

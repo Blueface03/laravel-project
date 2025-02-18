@@ -10,9 +10,9 @@
             <h4>Renstra 2017-2022 Perubahan</h4>
             <p>Renstra 2017-2022 Perubahan</p>
             <div class="button-group2">
-                <a href="#" class="btn-custom btn-custom-download-1"><i class="fas fa-download"></i> Download</a>
-                <a href="#" class="btn-custom btn-custom-read-2"><i class="fas fa-book-open"></i> Lihat</a>
-                <a href="#" class="btn-custom btn-custom-link-3"><i class="fas fa-link"></i> Copy Link</a>
+                <a href="path/to/file.pdf" class="btn-custom btn-custom-download-1"><i class="fas fa-download"></i> Download</a>
+                <a href="path/to/document.html" class="btn-custom btn-custom-read-2"><i class="fas fa-book-open"></i> Lihat</a>
+                <a href="#" class="btn-custom btn-custom-link-3"onclick="copyLink(); console.log('Copy link button clicked')"k"></i> Copy Link</a>
 
             </div>
         </div>
