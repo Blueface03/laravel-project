@@ -46,7 +46,7 @@
     </div>
 </header>
 
-<section class="page-section" id="services">
+<section class="page-section" id="services" style="padding-bottom: 50px">
     <div class="container">
         <div class="text-center"  style="padding-top: 50px">
             <h2 class="section-heading text-uppercase" >Layanan Utama</h2>
