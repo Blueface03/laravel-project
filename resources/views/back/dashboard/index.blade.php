@@ -49,7 +49,7 @@
 <section class="page-section" id="services">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Layanan Utama</h2>
+            <h2 class="section-heading text-uppercase" style="padding-top: 100px">Layanan Utama</h2>
             <h3 class="section-subheading text-muted">Layanan utama yang kami hadirkan untuk masyarakat sebagai bentuk
                 komitmen dalam mewujudkan Tegal yang Mandiri dan Sejahtera.</h3>
         </div>
@@ -70,7 +70,7 @@
 <section class="page-section bg-light" id="team">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">kepala </h2>
+            <h2 class="section-heading text-uppercase"  style="padding-top: 100px">kepala </h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
         <div class="row">
