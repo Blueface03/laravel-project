@@ -48,8 +48,8 @@
 
 <section class="page-section" id="services">
     <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase" style="padding-top: 100px">Layanan Utama</h2>
+        <div class="text-center"  style="padding-top: 100px">
+            <h2 class="section-heading text-uppercase" >Layanan Utama</h2>
             <h3 class="section-subheading text-muted">Layanan utama yang kami hadirkan untuk masyarakat sebagai bentuk
                 komitmen dalam mewujudkan Tegal yang Mandiri dan Sejahtera.</h3>
         </div>
