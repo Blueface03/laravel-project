@@ -50,12 +50,6 @@
     <label for="email" class="checkbox-label">E-mail</label>
     <input type="checkbox" id="kurir" name="caraMendapatkanSalinanInformasi[]" value="Kurir / POS" class="checkbox-input">
     <label for="kurir" class="checkbox-label">Kurir / POS</label>
-
-    <div class="captcha-section">
-        <img src="captcha_image" alt="Captcha">
-        <input type="text" id="captcha" name="captcha" class="input-field">
-    </div>
-
     <button type="submit" class="submit-button">KIRIM</button>
 </form>
 @if(session('success'))

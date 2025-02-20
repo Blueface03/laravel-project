@@ -36,7 +36,6 @@ class InfoRequestController extends Controller
         $text .= "Cara Memperoleh Informasi: $caraMemperolehInformasi\n";
         $text .= "Mendapatkan Salinan Informasi: $mendapatkanSalinanInformasi\n";
         $text .= "Cara Mendapatkan Salinan: $caraMendapatkanSalinanInformasi\n";
-        $text .= "Captcha: $captcha\n";
 
         // Kirim pesan ke bot Telegram menggunakan API
         $url = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" . urlencode($text);
