@@ -8,7 +8,7 @@
             <h2 class="section-heading text-uppercase">Contact Us</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </header>
-        <form id="contactForm" method="POST" action="{{ route('send.message') }}">
+        <form id="contactForm" method="POST">
             @csrf
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
