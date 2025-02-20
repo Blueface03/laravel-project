@@ -15,12 +15,6 @@ use App\Http\Controllers\InfoRequestController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-use App\Http\Controllers\AduanController;
-
-Route::get('/aduan', [AduanController::class, 'index']);
-Route::post('/submit-aduan', [AduanController::class, 'submitAduan']);
-
-
 Route::post('/send-info-request', [InfoRequestController::class, 'sendInfoRequest']);
 Route::post('/send-message', [ContactController::class, 'sendMessage']);
 
