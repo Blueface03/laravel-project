@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\InfoRequestController;
+
+Route::post('/send-info-request', [InfoRequestController::class, 'sendInfoRequest']);
+
 
 use App\Http\Controllers\ContactController;
 
