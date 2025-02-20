@@ -8,10 +8,10 @@ use App\Models\ContactMessage;
 
 class ContactFormController extends Controller
 {
-    // Fungsi untuk menangani pengiriman formulir
+    // Menangani pengiriman formulir
     public function submitForm(Request $request)
     {
-        // Validasi input
+        // Validasi input formulir
         $request->validate([
             'name' => 'required|string|max:100',
             'email' => 'required|email',
@@ -34,12 +34,11 @@ class ContactFormController extends Controller
         return redirect()->back()->with('success', 'Pesan telah dikirim!');
     }
 
-    // Mengirimkan pesan ke Telegram
+    // Fungsi untuk mengirim pesan ke Telegram
     private function sendToTelegram(Request $request)
     {
-        // Mengambil Token Bot dan Chat ID dari .env
         $botToken = env('TELEGRAM_BOT_TOKEN');
-        $chatId = env('TELEGRAM_CHAT_ID');
+        $adminChatId = env('TELEGRAM_ADMIN_CHAT_ID');  // Chat ID Admin
 
         $message = "Pesan Kontak Baru\n\n";
         $message .= "Nama: " . $request->name . "\n";
@@ -49,13 +48,13 @@ class ContactFormController extends Controller
 
         $url = "https://api.telegram.org/bot$botToken/sendMessage";
 
-        // Mengirim request ke Telegram API
+        // Mengirim pesan ke Telegram
         $response = Http::get($url, [
-            'chat_id' => $chatId,
+            'chat_id' => $adminChatId,
             'text' => $message,
         ]);
 
-        // Cek jika ada error dari API Telegram
+        // Log error jika pengiriman gagal
         if ($response->failed()) {
             \Log::error('Failed to send message to Telegram: ' . $response->body());
         }
