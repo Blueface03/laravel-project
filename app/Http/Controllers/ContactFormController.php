@@ -47,10 +47,16 @@ class ContactFormController extends Controller
         $url = "https://api.telegram.org/bot$botToken/sendMessage";
 
         // Mengirim request ke Telegram API
-        Http::get($url, [
+        $response = Http::get($url, [
             'chat_id' => $chatId,
             'text' => $message,
         ]);
+
+        // Cek jika ada error dari API Telegram
+        if ($response->failed()) {
+            \Log::error('Failed to send message to Telegram: ' . $response->body());
+        }
     }
+
 }
 
