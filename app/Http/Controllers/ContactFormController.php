@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Http;
 
 class ContactFormController extends Controller
 {
-    // Menangani pengiriman formulir kontak
     public function submitForm(Request $request)
     {
         // Validasi input
@@ -34,11 +33,10 @@ class ContactFormController extends Controller
         return redirect()->back()->with('success', 'Pesan telah dikirim!');
     }
 
-    // Mengirimkan pesan ke Telegram
     private function sendToTelegram(Request $request)
     {
-        $botToken = 'YOUR_BOT_TOKEN'; // Ganti dengan token bot Telegram Anda
-        $chatId = 'YOUR_CHAT_ID'; // Ganti dengan chat ID atau grup ID Telegram Anda
+        $botToken = env('TELEGRAM_BOT_TOKEN');
+        $chatId = env('TELEGRAM_CHAT_ID');
 
         $message = "Pesan Kontak Baru\n\n";
         $message .= "Nama: " . $request->name . "\n";
@@ -55,3 +53,4 @@ class ContactFormController extends Controller
         ]);
     }
 }
+
