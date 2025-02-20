@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+use App\Http\Controllers\AduanController;
+
+Route::post('/submit-aduan', [AduanController::class, 'submitAduan']);
+Route::get('/aduan-list', [AduanController::class, 'showAduanList']);
+
+
 use App\Http\Controllers\InfoRequestController;
 
 Route::post('/send-info-request', [InfoRequestController::class, 'sendInfoRequest']);

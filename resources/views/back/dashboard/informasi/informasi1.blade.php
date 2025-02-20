@@ -1,6 +1,6 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-@include('back.layout.headinfor',['title' => 'Permohonan Informasi'])  
+@include('back.layout.headinfor', ['title' => 'Permohonan Informasi'])
 <form class="info-request-form" action="{{ url('/send-info-request') }}" method="POST">
     @csrf
     <label for="namaPemohon" class="input-label">Nama Pemohon</label>
@@ -30,7 +30,8 @@
     <label class="input-label">Cara Memperoleh Informasi</label>
     <input type="checkbox" id="melihat" name="caraMemperolehInformasi[]" value="Melihat" class="checkbox-input">
     <label for="melihat" class="checkbox-label">Melihat</label>
-    <input type="checkbox" id="mendengarkan" name="caraMemperolehInformasi[]" value="Mendengarkan" class="checkbox-input">
+    <input type="checkbox" id="mendengarkan" name="caraMemperolehInformasi[]" value="Mendengarkan"
+        class="checkbox-input">
     <label for="mendengarkan" class="checkbox-label">Mendengarkan</label>
     <input type="checkbox" id="membaca" name="caraMemperolehInformasi[]" value="Membaca" class="checkbox-input">
     <label for="membaca" class="checkbox-label">Membaca</label>
@@ -44,22 +45,25 @@
     <label for="hardcopy" class="checkbox-label">Hardcopy</label>
 
     <label class="input-label">Cara Mendapatkan Salinan Informasi</label>
-    <input type="checkbox" id="ambilLangsung" name="caraMendapatkanSalinanInformasi[]" value="Mengambil Langsung" class="checkbox-input">
+    <input type="checkbox" id="ambilLangsung" name="caraMendapatkanSalinanInformasi[]" value="Mengambil Langsung"
+        class="checkbox-input">
     <label for="ambilLangsung" class="checkbox-label">Mengambil Langsung</label>
-    <input type="checkbox" id="email" name="caraMendapatkanSalinanInformasi[]" value="E-mail" class="checkbox-input">
+    <input type="checkbox" id="email" name="caraMendapatkanSalinanInformasi[]" value="E-mail"
+        class="checkbox-input">
     <label for="email" class="checkbox-label">E-mail</label>
-    <input type="checkbox" id="kurir" name="caraMendapatkanSalinanInformasi[]" value="Kurir / POS" class="checkbox-input">
+    <input type="checkbox" id="kurir" name="caraMendapatkanSalinanInformasi[]" value="Kurir / POS"
+        class="checkbox-input">
     <label for="kurir" class="checkbox-label">Kurir / POS</label>
     <button type="submit" class="submit-button">KIRIM</button>
 </form>
-@if(session('success'))
+@if (session('success'))
     <div class="alert alert-success">{{ session('success') }}</div>
 @endif
 
-@if(session('error'))
+@if (session('error'))
     <div class="alert alert-danger">{{ session('error') }}</div>
 @endif
 
 
-        @include('back.layout.footer')
-        @include('back.layout.scripts')
+@include('back.layout.footer')
+@include('back.layout.scripts')
