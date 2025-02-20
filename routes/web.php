@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\ContactController;
 
-Route::post('/send-message', [ContactFormController::class, 'submitForm'])->name('send.message');
+Route::post('/send-message', [ContactController::class, 'sendMessage']);
 
 
 Route::get('/', function () {
