@@ -1,6 +1,6 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-@include('back.layout.headinfor',['title' => 'Laporan Informasi Publik'])
+@include('back.layout.headinfor',['title' => 'Agenda Pimpinan'])
     <div class="container mt-5">
         <div class="row mt-3">
             <div class="col-md-3">
