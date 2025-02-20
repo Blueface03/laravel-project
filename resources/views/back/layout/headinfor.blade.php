@@ -2,8 +2,8 @@
 <header class="header2" style="padding-top: 100px">
     <h2>INFORMASI</h2>
     <h3> @switch($title)
-            @case('Laporan Infromasi Publik')
-                Laporan Infromasi Publik
+            @case('Laporan Informasi Publik')
+                Laporan Informasi Publik
             @break
             @case('Pengadaan Barang Dan Jasa')
                 Pengadaan Barang Dan Jasa
@@ -17,8 +17,8 @@
 
 <div class="container mt-5">
         <h3> @switch($title)
-            @case('Laporan Infromasi Publik')
-                Daftar Laporan Infromasi Publik
+            @case('Laporan Informasi Publik')
+                Daftar Laporan Informasi Publik
             @break
             @case('Pengadaan Barang Dan Jasa')
                 Daftar Pengadaan Barang Dan Jasa
