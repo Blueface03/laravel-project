@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ContactMessage;
 use Illuminate\Support\Facades\Http;
+use App\Models\ContactMessage;
 
 class ContactFormController extends Controller
 {
+    // Fungsi untuk menangani pengiriman formulir
     public function submitForm(Request $request)
     {
         // Validasi input
@@ -33,8 +34,10 @@ class ContactFormController extends Controller
         return redirect()->back()->with('success', 'Pesan telah dikirim!');
     }
 
+    // Mengirimkan pesan ke Telegram
     private function sendToTelegram(Request $request)
     {
+        // Mengambil Token Bot dan Chat ID dari .env
         $botToken = env('TELEGRAM_BOT_TOKEN');
         $chatId = env('TELEGRAM_CHAT_ID');
 
@@ -57,6 +60,4 @@ class ContactFormController extends Controller
             \Log::error('Failed to send message to Telegram: ' . $response->body());
         }
     }
-
 }
-
