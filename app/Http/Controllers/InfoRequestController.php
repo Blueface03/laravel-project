@@ -22,7 +22,6 @@ class InfoRequestController extends Controller
         $caraMemperolehInformasi = implode(', ', $request->input('caraMemperolehInformasi', []));
         $mendapatkanSalinanInformasi = implode(', ', $request->input('mendapatkanSalinanInformasi', []));
         $caraMendapatkanSalinanInformasi = implode(', ', $request->input('caraMendapatkanSalinanInformasi', []));
-        $captcha = $request->input('captcha');
 
         // Format pesan untuk Telegram
         $text = "Permohonan Informasi Baru:\n";

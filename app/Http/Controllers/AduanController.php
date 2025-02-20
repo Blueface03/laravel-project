@@ -16,6 +16,7 @@ class AduanController extends Controller
             'alamat' => 'required|string',
             'topik' => 'required|string',
             'pesan' => 'required|string',
+            'security_code' => 'required|string',
         ]);
 
         // Menyimpan aduan ke database

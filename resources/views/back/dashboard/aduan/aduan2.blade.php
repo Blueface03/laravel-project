@@ -30,6 +30,13 @@
             <textarea name="alamat" placeholder="Alamat" required></textarea>
             <input type="text" name="topik" placeholder="Topik Pembahasan Keluhan" required>
             <textarea name="pesan" placeholder="Isi Pesan/Keluhan Anda" required></textarea>
+
+            <div class="captcha-container">
+                <span class="captcha-text">penuba</span>
+                <button type="button" class="recaptcha-btn">🔄 Recaptcha</button>
+            </div>
+
+            <input type="text" name="security_code" placeholder="Masukkan security code" required>
             <button type="submit" class="submit-btn">✈ KIRIM</button>
         </form>
 
