@@ -1,110 +1,59 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Aduan</title>
-    <style>
-        /* Styling umum untuk detail aduan */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f9fc;
-            color: #333;
-        }
+<div class="aduan-container">
+    <!-- Left Side: Daftar Aduan -->
+    <div class="aduan-list">
+        <h2>Daftar Aduan</h2>
 
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .complaint-detail {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .complaint-detail h2 {
-            font-size: 24px;
-            color: #000;
-        }
-
-        .complaint-card {
-            margin-top: 20px;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .response-card {
-            margin-top: 20px;
-            background: #f7f8fc;
-            border-left: 4px solid #2979ff;
-            padding: 15px;
-            font-size: 16px;
-        }
-
-        .response-card p {
-            font-size: 14px;
-        }
-
-        .complaint-header, .response-header {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            color: #777;
-        }
-
-        .complaint-user, .response-user {
-            font-weight: bold;
-        }
-
-        .complaint-date {
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <div class="complaint-detail">
-            <h2 id="complaintTitle">Bakar Sampah</h2>
-            <div class="complaint-card" id="complaintText">
-                <div class="complaint-header">
-                    <span class="complaint-user"><strong>NN</strong></span>
-                    <span class="complaint-date">📅 Sabtu, 14 September 2024 - 08:04:22</span>
-                </div>
-                <p>Mohon tindakan nya karena tetangga kanan kiri bakar sampah setiap hari dan sangat berbahaya di musim kemarau yg kering seperti ini. Mohon segera ditindak</p>
+        <div class="aduan-card">
+            
+            <div class="aduan-header">
+                <span class="aduan-user">👤 Kalisal</span>
+                <span class="aduan-date">📅 Selasa, 21 Januari 2025 - 10:14:54</span>
             </div>
+            <h3><a href="{{ url('/detailAduan') }}">Penyelesaian <strong>Jual Beli Rumah</strong></a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at itaque expedita deserunt, nobis illo eligendi ex saepe voluptate velit quasi numquam cupiditate, natus ipsam minus architecto voluptatum? Ratione, blanditiis.</p>
+            </li>
+        </div>
 
-            <div class="response-card">
-                <div class="response-header">
-                    <span class="response-user"><strong>ADMINISTRATOR</strong></span>
-                    <span class="complaint-date">📅 17 September 2024 - 11:20:38</span>
-                </div>
-                <p>Yth. Sdr NN, Terima kasih telah menghubungi Dinas Kesehatan DIY terkait aduan tentang pembakaran sampah di lingkungan tersebut. Aduan telah kami teruskan ke Dinas Kesehatan Kabupaten Sleman untuk ditindaklanjuti. Jika dirasa belum ada solusi, kami persilakan untuk menyampaikan ke Puskesmas terdekat atau kelurahan setempat. Demikian, terima kasih.</p>
+        <div class="aduan-card">
+            <div class="aduan-header">
+                <span class="aduan-user">👤 Rio Handoko</span>
+                <span class="aduan-date">📅 Jum’at, 15 November 2024 - 14:29:46</span>
             </div>
+            <h3>Imunisasi Catin Wanita</h3>
+            <p>Izin bertanya bisa kah calon saya perempuan mendapatkan pelayanan imunisasi catin di wilayah Yogyakarta soalnya dy bertugas sebagai perawat di RS UII ...</p>
+        </div>
+
+        <div class="aduan-card">
+            <div class="aduan-header">
+                <span class="aduan-user">👤 NN</span>
+                <span class="aduan-date">📅 Sabtu, 14 September 2024 - 08:04:22</span>
+            </div>
+            <h3>Bakar Sampah</h3>
+            <p>Mohon tindakan nya karena tetangga kanan kiri bakar sampah setiap hari dan sangat berbahaya di musim kemarau yang kering seperti ini. Mohon segera ...</p>
+        </div>
+        <div class="button-group2">
+        <a href="#" class="btn-custom btn-custom-download-1"> Lihat Lainnya</a>
         </div>
     </div>
 
-    <script>
-        // Get the URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const title = urlParams.get('title');
-        const date = urlParams.get('date');
-        const user = urlParams.get('user');
-        const content = urlParams.get('content');
+    <!-- Right Side: Form Aduan -->
+    <div class="aduan-form">
+        <h2>Form Aduan</h2>
+        <form>
+            <input type="text" placeholder="Nama">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="No. Telp">
+            <textarea placeholder="Alamat"></textarea>
+            <input type="text" placeholder="Topik Pembahasan Keluhan">
+            <textarea placeholder="Isi Pesan/Keluhan Anda"></textarea>
 
-        // Set the complaint details dynamically
-        document.getElementById('complaintTitle').innerText = title;
-        document.getElementById('complaintText').innerHTML = `
-            <div class="complaint-header">
-                <span class="complaint-user"><strong>${user}</strong></span>
-                <span class="complaint-date">📅 ${date}</span>
+            <div class="captcha-container">
+                <span class="captcha-text">penuba</span>
+                <button type="button" class="recaptcha-btn">🔄 Recaptcha</button>
             </div>
-            <p>${content}</p>
-        `;
-    </script>
 
-</body>
-</html>
+            <input type="text" placeholder="Masukkan security code">
+            <button type="submit" class="submit-btn">✈ KIRIM</button>
+        </form>
+    </div>
+</div>

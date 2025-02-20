@@ -29,6 +29,10 @@ class DashboardController extends Controller
     {
         return view('back.dashboard.kebijakan');
     }
+    public function detailAduan()
+    {
+        return view('back.dashboard.detailAduan');
+    }
     public function profile($profileNumber)
     {
         return view("back.dashboard.profil.profil" . $profileNumber);
@@ -114,7 +118,7 @@ class DashboardController extends Controller
     public function anggaran2021($anggaran2021_Number)
     {
         // Tentukan nama view sesuai dengan parameter anggaran2021Number
-        $viewName = "back.dashboard.anggaran2021.anggaran2021" . $anggaran2021_Number;
+        $viewName = "back.dashboard.anggaran2021.anggaran2021_" . $anggaran2021_Number;
 
         // Periksa apakah file view ada, jika ada tampilkan, jika tidak tampilkan error 404
         if (view()->exists($viewName)) {
@@ -126,7 +130,7 @@ class DashboardController extends Controller
     public function anggaran2022($anggaran2022_Number)
     {
         // Tentukan nama view sesuai dengan parameter anggaran2022Number
-        $viewName = "back.dashboard.anggaran2022.anggaran2022" . $anggaran2022_Number;
+        $viewName = "back.dashboard.anggaran2022.anggaran2022_" . $anggaran2022_Number;
 
         // Periksa apakah file view ada, jika ada tampilkan, jika tidak tampilkan error 404
         if (view()->exists($viewName)) {
@@ -138,7 +142,7 @@ class DashboardController extends Controller
     public function anggaran2023($anggaran2023_Number)
     {
         // Tentukan nama view sesuai dengan parameter anggaran2023Number
-        $viewName = "back.dashboard.anggaran2023.anggaran2023" . $anggaran2023_Number;
+        $viewName = "back.dashboard.anggaran2023.anggaran2023_" . $anggaran2023_Number;
 
         // Periksa apakah file view ada, jika ada tampilkan, jika tidak tampilkan error 404
         if (view()->exists($viewName)) {
@@ -150,7 +154,7 @@ class DashboardController extends Controller
     public function anggaran2024($anggaran2024_Number)
     {
         // Tentukan nama view sesuai dengan parameter anggaran2024Number
-        $viewName = "back.dashboard.anggaran2024.anggaran2024" . $anggaran2024_Number;
+        $viewName = "back.dashboard.anggaran2024.anggaran2024_" . $anggaran2024_Number;
 
         // Periksa apakah file view ada, jika ada tampilkan, jika tidak tampilkan error 404
         if (view()->exists($viewName)) {
@@ -162,7 +166,7 @@ class DashboardController extends Controller
     public function anggaran2025($anggaran2025_Number)
     {
         // Tentukan nama view sesuai dengan parameter anggaran2025Number
-        $viewName = "back.dashboard.anggaran2025.anggaran2025" . $anggaran2025_Number;
+        $viewName = "back.dashboard.anggaran2025.anggaran2025_" . $anggaran2025_Number;
 
         // Periksa apakah file view ada, jika ada tampilkan, jika tidak tampilkan error 404
         if (view()->exists($viewName)) {

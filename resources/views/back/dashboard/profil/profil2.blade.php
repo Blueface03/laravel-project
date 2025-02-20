@@ -2,7 +2,7 @@
 @include('back.layout.navbar')
 <header class="header2" style="padding-top: 100px">
     <h1>Profil</h1>
-    <h2>Aset Dan Inventarisasi Barang</h2>
+    <h2>Tugas Dan Fungsi</h2>
     <div class="divider2"></div>
 </header>
 <section class="page-section" id="services" style="padding-top: 0px">

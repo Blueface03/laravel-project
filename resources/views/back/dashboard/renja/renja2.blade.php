@@ -1,10 +1,10 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
+
+@include('back.layout.headrenja',['title' => 'renja 2024-2026'])
 <!-- Container -->
 <div class="container2">
     <section class="document-section2">
-        <h3>Dokumen Renstra 2017-2022</h3>
-
         <div class="document-item2">
             <h4>judul</h4>
             <p>judul</p>

@@ -1,10 +1,6 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
-<header class="header2" style="padding-top: 100px">
-    <h1>Profil</h1>
-    <h2>Aset Dan Inventarisasi Barang</h2>
-    <div class="divider2"></div>
-</header>
+@include('back.layout.headalur',['title' => 'Alur Pengajuan Keberatan Infromasi Publik'])
 <section class="page-section" id="services">
     <div class="container">
         <div class="iframe-container">

@@ -16,7 +16,7 @@
                 <span class="aduan-user">👤 Kalisal</span>
                 <span class="aduan-date">📅 Selasa, 21 Januari 2025 - 10:14:54</span>
             </div>
-            <h3><a href="{{ url('/galeri') }}">Penyelesaian <strong>Jual Beli Rumah</strong></a></h3>
+            <h3><a href="{{ url('/detailAduan') }}">Penyelesaian <strong>Jual Beli Rumah</strong></a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at itaque expedita deserunt, nobis illo eligendi ex saepe voluptate velit quasi numquam cupiditate, natus ipsam minus architecto voluptatum? Ratione, blanditiis.</p>
             </li>
         </div>

@@ -3,7 +3,7 @@
     <h1>PROGRAM & KEGIATAN</h1>
     <h2>RENJA</h2>
     <h3> @switch($title)
-            @case('x`renja 2020-2023')
+            @case('renja 2020-2023')
                 renja 2020-2023
             @break
 
@@ -26,4 +26,3 @@
         @endswitch</h3>
     </section>
 </div>
-
