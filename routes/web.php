@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\Back\DashboardController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\InfoRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,20 +15,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 use App\Http\Controllers\AduanController;
 
+Route::get('/aduan', [AduanController::class, 'index']);
 Route::post('/submit-aduan', [AduanController::class, 'submitAduan']);
-Route::get('/aduan-list', [AduanController::class, 'showAduanList']);
 
-
-use App\Http\Controllers\InfoRequestController;
 
 Route::post('/send-info-request', [InfoRequestController::class, 'sendInfoRequest']);
-
-
-use App\Http\Controllers\ContactController;
-
 Route::post('/send-message', [ContactController::class, 'sendMessage']);
 
 
