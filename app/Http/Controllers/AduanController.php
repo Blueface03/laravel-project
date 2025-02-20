@@ -7,6 +7,14 @@ use App\Models\Aduan;
 
 class AduanController extends Controller
 {
+    // Menampilkan form dan daftar aduan
+    public function index()
+    {
+        $aduans = Aduan::latest()->get();  // Mengambil aduan terbaru
+        return view('aduan.index', compact('aduans'));
+    }
+
+    // Menyimpan aduan dan mengirim ke Telegram
     public function submitAduan(Request $request)
     {
         $validated = $request->validate([
@@ -30,8 +38,8 @@ class AduanController extends Controller
         $aduan->save();
 
         // Mengirimkan pesan ke Telegram
-        $token = '7634422842:AAEonFeiei3gf5qM9lZuppuGiS4Peg5cc-4';  // Ganti dengan token bot Telegram Anda
-        $chat_id = '7643617622';  // Ganti dengan ID chat Telegram Anda
+        $token = '7634422842:AAEonFeiei3gf5qM9lZuppuGiS4Peg5cc-4'; // Ganti dengan token bot Telegram Anda
+        $chat_id = '7643617622'; // Ganti dengan ID chat Telegram Anda
 
         // Format pesan untuk Telegram
         $text = "Aduan Baru:\n";
@@ -44,8 +52,6 @@ class AduanController extends Controller
 
         // Kirim pesan ke bot Telegram menggunakan API
         $url = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" . urlencode($text);
-
-        // Melakukan permintaan HTTP ke API Telegram
         $response = file_get_contents($url);
 
         if ($response) {
@@ -54,11 +60,4 @@ class AduanController extends Controller
             return back()->with('error', 'Terjadi kesalahan dalam mengirim aduan!');
         }
     }
-    public function showAduanList()
-{
-    $aduans = Aduan::latest()->get();  // Mendapatkan aduan terbaru
-    return view('aduan.list', compact('aduans'));
 }
-
-}
-
