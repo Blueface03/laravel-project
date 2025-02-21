@@ -48,11 +48,6 @@ document.getElementById('tahunSelect').addEventListener('change', filterTable);
             </div>
             <p>${text}</p>
         `;
-        const element = document.querySelector('#yourElementId');
-if (element) {
-    element.addEventListener('click', yourFunction);
-}
-
 
         // Show the complaint detail section
         document.getElementById('complaintDetail').style.display = 'block';
