@@ -986,7 +986,6 @@ a {
 .nav__logo img {
   width: 100px; /* Atur ukuran sesuai keinginan */
     height: auto;
-    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
   animation: glow 1.5s infinite alternate;
   box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Menambahkan efek glow */
     transition: filter 0.3s ease, box-shadow 0.3s ease;
