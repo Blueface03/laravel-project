@@ -51,7 +51,7 @@
                         <div class="modal-body">
                             <!-- Project details-->
                             <h2 class="text-uppercase">Project Name</h2>
-                            <iframe type="application/pdf" src="{{ url('http://laravel-project-self.vercel.app/back/assets/pdf/' . 'cth.pdf') }}" target="_blank"" width="820" height="1200" allow="autoplay"></iframe>
+                            <iframe type="application/pdf" src="{{ url('back/assets/pdf/' . 'cth.pdf') }}" target="_blank"" width="820" height="1200" allow="autoplay"></iframe>
                             <ul class="list-inline">
                                 <li>
                                     <strong>Client:</strong>
