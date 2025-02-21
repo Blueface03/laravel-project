@@ -989,11 +989,11 @@ a {
 
 @keyframes glow {
   0% {
-      filter: brightness(1.2) blur(0);
+      filter: brightness(1.2);
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
   }
   100% {
-      filter: brightness(1.5) blur(5px);
+      filter: brightness(1.5);
       box-shadow: 0 0 20px rgba(255, 255, 255, 1);
   }
 }
