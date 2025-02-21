@@ -4,6 +4,10 @@ use App\Http\Controllers\Back\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\InfoRequestController;
+use App\Http\Controllers\DownloadController;
+
+Route::get('/download/{filename}', [DownloadController::class, 'download'])->name('download.pdf');
+
 
 /*
 |--------------------------------------------------------------------------
