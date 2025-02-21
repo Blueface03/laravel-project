@@ -984,6 +984,9 @@ a {
   }
 }
 .nav__logo img {
+  width: 100px; /* Atur ukuran sesuai keinginan */
+    height: auto;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
   animation: glow 1.5s infinite alternate;
 }
 
