@@ -4,9 +4,7 @@ namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Response;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\File;
+
 
 
 class DashboardController extends Controller
@@ -174,19 +172,6 @@ class DashboardController extends Controller
         }
     }
 
-    public function download($filename)
-    {
-        // Menentukan path file PDF
-        $filePath = public_path('back/assets/pdf/' . $filename);
-
-        // Memeriksa apakah file ada
-        if (File::exists($filePath)) {
-            return response()->download($filePath);
-        }
-
-        // Jika file tidak ditemukan
-        return abort(404, 'File not found.');
-    }
 
 }
 
