@@ -3,7 +3,7 @@
     <nav class="nav container">
         <div class="nav__data">
             <a href="#" class="nav__logo">
-                <img src="{{ asset('back/assets/img/DUKCAPIL KOTA TEGAL.png') }}" alt="Logo" style="height: 40px;" />
+                <img src="{{ asset('back/assets/img/Tegal.svg.png') }}" alt="Logo" style="height: 40px;" />
             </a>
 
             <div class="nav__toggle" id="nav-toggle">
