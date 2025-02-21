@@ -984,7 +984,6 @@ a {
   }
 }
 .nav__logo img {
-  width: 100px; /* Atur ukuran sesuai keinginan */
   animation: glow 1.5s infinite alternate;
 }
 
