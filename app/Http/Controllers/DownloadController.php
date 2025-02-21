@@ -15,19 +15,23 @@ class DownloadController extends Controller
      * @return 
      */
     public function download($filename)
-{
-    // Tentukan path penyimpanan file di folder 'public/back/assets/pdf/'
-    $path = public_path('back/assets/pdf/' . $filename); // Sesuaikan dengan lokasi file Anda
+    {
+        // Tentukan path penyimpanan file di folder 'public/back/assets/pdf/'
+        $path = public_path('back/assets/pdf/' . $filename); // Sesuaikan dengan lokasi file Anda
 
-    // Cek apakah file ada
-    if (File::exists($path)) {
-        // Jika file ada, beri respons untuk mendownload file
-        return response()->download($path);
-    } else {
-        // Jika file tidak ditemukan, tampilkan halaman error 404
-        abort(404, 'File tidak ditemukan');
+        // Cek apakah file ada
+        if (File::exists($path)) {
+            // Mengatur header agar browser mendownload file
+            return response()->download($path, $filename, [
+                'Content-Type' => 'application/pdf',  // Tipe file PDF
+                'Content-Disposition' => 'attachment; filename="' . $filename . '"'
+            ]);
+        } else {
+            // Jika file tidak ditemukan, tampilkan halaman error 404
+            abort(404, 'File tidak ditemukan');
+        }
     }
-}
+
 
 
 }
