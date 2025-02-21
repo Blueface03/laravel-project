@@ -15,36 +15,46 @@ class DownloadController extends Controller
      * @return 
      */
     public function download($filename)
-    {
-        // Tentukan path penyimpanan file di folder 'public/back/assets/pdf/'
-        $path = public_path('back/assets/pdf/' . $filename); // Sesuaikan dengan lokasi file Anda
+{
+    // Validasi nama file
+    $filename = basename($filename);
 
-        // Cek apakah file ada
-        if (File::exists($path)) {
-            // Mendapatkan ekstensi file
-            $extension = File::extension($path);
+    // Tentukan path penyimpanan file
+    $path = public_path('back/assets/pdf/' . $filename);
 
-            // Tentukan MIME type berdasarkan ekstensi file
-            $mimeType = 'application/octet-stream'; // Default untuk file binary
-            if ($extension === 'pdf') {
-                $mimeType = 'application/pdf';
-            } elseif ($extension === 'jpg' || $extension === 'jpeg') {
-                $mimeType = 'image/jpeg';
-            } elseif ($extension === 'png') {
-                $mimeType = 'image/png';
-            } elseif ($extension === 'txt') {
-                $mimeType = 'text/plain';
-            }
-
-            // Mengatur header agar browser mendownload file
-            return response()->download($path, $filename, [
-                'Content-Type' => $mimeType,
-                'Content-Disposition' => 'attachment; filename="' . $filename . '"'
-            ]);
-        } else {
-            // Jika file tidak ditemukan, tampilkan halaman error 404
-            abort(404, 'File tidak ditemukan');
+    // Cek apakah file ada
+    if (File::exists($path)) {
+        // Validasi ekstensi file
+        $allowedExtensions = ['pdf', 'jpg', 'jpeg', 'png', 'txt'];
+        $extension = File::extension($path);
+        if (!in_array($extension, $allowedExtensions)) {
+            abort(403, 'Ekstensi file tidak diperbolehkan');
         }
+
+        // Cek MIME type dengan menggunakan fileinfo
+        $finfo = finfo_open(FILEINFO_MIME_TYPE); 
+        $mimeType = finfo_file($finfo, $path);
+        finfo_close($finfo);
+        if (!in_array($mimeType, ['application/pdf', 'image/jpeg', 'image/png', 'text/plain'])) {
+            abort(403, 'File tidak valid');
+        }
+
+        // Cek ukuran file
+        $maxFileSize = 10 * 1024 * 1024; // 10 MB
+        if (File::size($path) > $maxFileSize) {
+            abort(403, 'File terlalu besar untuk diunduh');
+        }
+
+        // Mengatur header agar browser mendownload file
+        return response()->download($path, $filename, [
+            'Content-Type' => $mimeType,
+            'Content-Disposition' => 'attachment; filename="' . $filename . '"'
+        ]);
+    } else {
+        // Jika file tidak ditemukan, tampilkan halaman error 404
+        abort(404, 'File tidak ditemukan');
     }
+}
+
 
 }
