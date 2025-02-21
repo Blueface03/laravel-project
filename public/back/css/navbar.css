@@ -983,3 +983,11 @@ a {
       margin-bottom: 20px;
   }
 }
+.nav__logo img {
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav__logo img:hover {
+  filter: brightness(1.5) blur(2px); /* Menambah kecerahan dan sedikit blur saat hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efek glow berwarna putih */
+}
