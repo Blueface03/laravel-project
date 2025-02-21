@@ -10,6 +10,7 @@
             <h4>Renstra 2017-2022 Perubahan</h4>
             <p>Renstra 2017-2022 Perubahan</p>
             <div class="button-group2">
+                <a href="{{ route('download.pdf', ['filename' => 'cth.pdf']) }}" class="btn-custom btn-custom-download-1"><i class="fas fa-download"></i> Download</a>
                 <a data-bs-toggle="modal" href="#portfolioModal1"  class="btn-custom btn-custom-read-2"><i class="fas fa-book-open"></i> Lihat</a>
                 <a href="#" class="btn-custom btn-custom-link-3" onclick="copyLink('{{ asset('back/assets/pdf/' . 'cth.pdf') }}')"><i class="fas fa-link"></i> Copy Link</a>
 
