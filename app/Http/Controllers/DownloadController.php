@@ -22,11 +22,12 @@ class DownloadController extends Controller
     // Cek apakah file ada
     if (File::exists($path)) {
         // Jika file ada, beri respons untuk mendownload file
-        return Response::download($path);
+        return response()->download($path);
     } else {
         // Jika file tidak ditemukan, tampilkan halaman error 404
         abort(404, 'File tidak ditemukan');
     }
 }
+
 
 }
