@@ -21,9 +21,24 @@ class DownloadController extends Controller
 
         // Cek apakah file ada
         if (File::exists($path)) {
+            // Mendapatkan ekstensi file
+            $extension = File::extension($path);
+
+            // Tentukan MIME type berdasarkan ekstensi file
+            $mimeType = 'application/octet-stream'; // Default untuk file binary
+            if ($extension === 'pdf') {
+                $mimeType = 'application/pdf';
+            } elseif ($extension === 'jpg' || $extension === 'jpeg') {
+                $mimeType = 'image/jpeg';
+            } elseif ($extension === 'png') {
+                $mimeType = 'image/png';
+            } elseif ($extension === 'txt') {
+                $mimeType = 'text/plain';
+            }
+
             // Mengatur header agar browser mendownload file
             return response()->download($path, $filename, [
-                'Content-Type' => 'application/pdf',  // Tipe file PDF
+                'Content-Type' => $mimeType,
                 'Content-Disposition' => 'attachment; filename="' . $filename . '"'
             ]);
         } else {
@@ -31,7 +46,5 @@ class DownloadController extends Controller
             abort(404, 'File tidak ditemukan');
         }
     }
-
-
 
 }
