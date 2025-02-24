@@ -1,5 +1,6 @@
 @include('back.layout.stylesheet')
 @include('back.layout.navbar')
+<body>
 <header class="header2" style="padding-top: 100px">
     <h1>Inovasi</h1>
     <h2>Sistem Infromasi</h2>
@@ -45,7 +46,7 @@
         </div>
     </div>
 </div>
-
+</body>
 
 
 @include('back.layout.footer')

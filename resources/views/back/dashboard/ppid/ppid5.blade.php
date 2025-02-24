@@ -23,32 +23,38 @@
                     <th>File</th>
                 </tr>
             </thead>
-            <tbody id="tableBody">
-                <tr data-tahun="2023" data-judul="Aset dan Inventarisasi Barang Tahun 2023">
+            <<tbody id="tableBody">
+                <tr data-tahun="2023" data-judul="Judul">
                     <td>1</td>
-                    <td>Aset dan Inventarisasi Barang Tahun 2023</td>
+                    <td>Judul</td>
                     <td class="button-group3">
-                        <a href="#" class="btn-custom btn-custom-download-1"><i class="fa fa-download"></i> Download</a>
-                        <a href="#" class="btn-custom btn-custom-read-2"><i class="fa fa-book"></i> Baca</a>
-                        <a href="#" class="btn-custom btn-custom-link-3"><i class="fa fa-link"></i> Link</a>
+                        <a data-bs-toggle="modal" href="#portfolioModal1" class="btn-custom btn-custom-read-2"><i
+                                class="fa fa-book"></i> Baca</a>
+                        <a href="#" class="btn-custom btn-custom-link-3"
+                            onclick="copyLink('{{ asset('back/assets/pdf/' . 'cth.pdf') }}')"><i class="fa fa-link"></i>
+                            Link</a>
                     </td>
                 </tr>
-                <tr data-tahun="2022" data-judul="Aset dan Inventarisasi Barang Tahun 2022">
+                <tr data-tahun="2022" data-judul="judul">
                     <td>2</td>
-                    <td>Aset dan Inventarisasi Barang Tahun 2022</td>
+                    <td>judul</td>
                     <td class="button-group3">
-                        <a href="#" class="btn-custom btn-custom-download-1"><i class="fa fa-download"></i> Download</a>
-                        <a href="#" class="btn-custom btn-custom-read-2"><i class="fa fa-book"></i> Baca</a>
-                        <a href="#" class="btn-custom btn-custom-link-3"><i class="fa fa-link"></i> Link</a>
+                        <a data-bs-toggle="modal" href="#portfolioModal1" class="btn-custom btn-custom-read-2"><i
+                                class="fa fa-book"></i> Baca</a>
+                        <a href="#" class="btn-custom btn-custom-link-3"
+                            onclick="copyLink('{{ asset('back/assets/pdf/' . 'cth.pdf') }}')"><i class="fa fa-link"></i>
+                            Link</a>
                     </td>
                 </tr>
-                <tr data-tahun="2021" data-judul="Aset dan Inventarisasi Barang Tahun 2021">
+                <tr data-tahun="2021" data-judul="Judul">
                     <td>3</td>
-                    <td>Aset dan Inventarisasi Barang Tahun 2021</td>
+                    <td>Judul</td>
                     <td class="button-group3">
-                        <a href="#" class="btn-custom btn-custom-download-1"><i class="fa fa-download"></i> Download</a>
-                        <a href="#" class="btn-custom btn-custom-read-2"><i class="fa fa-book"></i> Baca</a>
-                        <a href="#" class="btn-custom btn-custom-link-3"><i class="fa fa-link"></i> Link</a>
+                        <a data-bs-toggle="modal" href="#portfolioModal1" class="btn-custom btn-custom-read-2"><i
+                                class="fa fa-book"></i> Baca</a>
+                        <a href="#" class="btn-custom btn-custom-link-3"
+                            onclick="copyLink('{{ asset('back/assets/pdf/' . 'cth.pdf') }}')"><i class="fa fa-link"></i>
+                            Link</a>
                     </td>
                 </tr>
             </tbody>
